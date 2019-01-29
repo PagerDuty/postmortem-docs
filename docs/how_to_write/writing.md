@@ -1,21 +1,20 @@
 ---
-cover:
+cover: assets/img/covers/post-mortem_process.png
 description: Here are concrete steps for producing a postmortem document. You will learn the most important information to include in the postmortem, how to collect and present that information, and how to conduct an effective analysis that results in system improvements.
 ---
-![Writing](../assets/img/headers/Postmortem_Step_by_Step.png)
+![Step by Step](../assets/img/headers/step_by_step.png)
 
-# Checklist
 Below are the steps involved in performing a postmortem at a high level. Below are the details of how to perform each step.
 
 1. Create a new postmortem for the incident.
 2. Schedule a postmortem meeting within the required timeframe for all required and optional attendees on the "Incident Postmortem Meetings" shared calendar.
 3. Populate the incident timeline with important changes in status/impact and key actions taken by responders.
-    * For each item in the timeline, include a metric or some third-party page where the data came from. 
-4. Analyze the incident. 
+    * For each item in the timeline, include a metric or some third-party page where the data came from.
+4. Analyze the incident.
     * Identify superficial and root causes.
     * Consider technology and process.
-5. Open any follow-up action tickets. 
-6. Write the external messaging. 
+5. Open any follow-up action tickets.
+6. Write the external messaging.
 7. Ask for review.
 8. Attend the postmortem meeting.
 9. Share the postmortem.
@@ -111,11 +110,11 @@ This level of analysis will uncover the superficial causes of the incident. Next
 
 Here are some questions to help you identify the class of a particular problem:
 
-- Is it an isolated incident or part of a trend? 
-- Was this a specific bug, a failure in a class of problem we anticipated, or did it uncover a class of issue we did not architecturally anticipate? 
-- Was there work the team chose not to do in the past that contributed to this incident? 
-- Research if there were any similar or related incidents in the past. Does this incident demonstrate a larger trend in your system? 
-- Will this class of issue get worse/more likely as you continue to grow and scale the use of the service? 
+- Is it an isolated incident or part of a trend?
+- Was this a specific bug, a failure in a class of problem we anticipated, or did it uncover a class of issue we did not architecturally anticipate?
+- Was there work the team chose not to do in the past that contributed to this incident?
+- Research if there were any similar or related incidents in the past. Does this incident demonstrate a larger trend in your system?
+- Will this class of issue get worse/more likely as you continue to grow and scale the use of the service?
 
 !!! tip
     We have a separate process for analyzing larger trends across multiple incidents to inform technical and organizational planning. Learn more in our guide on [Operational Reviews](http://reviews.pagerduty.com).
