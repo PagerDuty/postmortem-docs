@@ -1,9 +1,9 @@
 # PagerDuty PostMortem Best Practice Documentation 
 [![Build Status](https://circleci.com/gh/PagerDuty/postmortem-docs/tree/master.svg?style=svg)](https://circleci.com/gh/PagerDuty/postmortem-docs)
 
-This is a collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings. See the [about page](docs/about.md) for more information on what this documentation is and why it exists.
+This is a collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings. See the [home page](docs/index.md) for more information on what this documentation is and why it exists.
 
-You can view the documentation [directly](docs/about.md) in this repository, or rendered as a website at https://postmortems.pagerduty.com.
+You can view the documentation [directly](docs/index.md) in this repository, or rendered as a website at https://postmortems.pagerduty.com.
 
 [![PagerDuty Postmortems Documentation](screenshot.png)](https://postmortems.pagerduty.com)
 
