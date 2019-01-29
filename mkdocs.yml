@@ -1,0 +1,66 @@
+# Project Information
+site_name: PagerDuty Postmortem Documentation
+site_description: A collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings.
+site_author: PagerDuty, Inc.
+site_favicon: 'assets/img/icon.png'
+site_url: https://postmortems.pagerduty.com
+
+# Repository
+repo_url: https://github.com/pagerduty/postmortem-docs
+
+# Copyright
+copyright: 'Copyright &copy; PagerDuty, Inc.'
+
+# Theme
+theme: 'material'
+theme_dir: 'theme'
+extra_css: ['assets/css/extra.css']
+extra_javascript: ['js/github_forks.js']
+extra:
+  favicon: 'assets/img/icon.png'
+  logo: 'assets/img/icon.png'
+  cover: 'assets/img/covers/default.png'
+  palette:
+    primary: 'green'
+    accent: 'blue grey'
+  author:
+    github: 'PagerDuty'
+    twitter: 'PagerDuty'
+    
+# Dev URL
+dev_addr: '0.0.0.0:8080'
+
+# Contents
+pages:
+  - Home: 'index.md'
+  - What Is a Postmortem: 'what_is.md'
+  - Blameless Culture:
+    - The Blameless Postmortem: 'culture/blameless.md'
+    - How to Introduce Postmortems: 'culture/introduce.md'
+    - Information Sharing: 'culture/sharing.md'
+    - Accountability: 'culture/accountability.md'
+  - How to Write a Postmortem:
+    - Step by Step: 'how_to_write/writing.md'
+    - Tips for Effective Postmortems: 'how_to_write/effective_post_mortems.md'
+  - The Postmortem Meeting: 'meeting.md'
+  - Resources:
+    - Template: 'resources/post_mortem_template.md'
+    - Checklist: 'resources/checklist.md'
+    - Analysis Questions: 'resources/analysis.md'
+    - Examples: 'resources/examples.md'
+    - Further Reading: 'resources/reading.md'
+
+# Analytics
+google_analytics: ['UA-8759953-1', 'auto']
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: '#'
+  - sane_lists:
+  - admonition:
+  - meta:
+  - pymdownx.details:
+  - pymdownx.extra:
+  - pymdownx.mark:
+  - pymdownx.tilde:
