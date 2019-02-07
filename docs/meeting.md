@@ -76,7 +76,7 @@ Not your role:
 Good facilitators tend to have a high level of emotional intelligence. This means they can easily read non-verbal cues of others to understand how people are feeling. They use this sense to cultivate an environment where everyone is comfortable speaking. Agile coaches and project managers are often skilled facilitators. At PagerDuty we have a guild of confident facilitators who coach individuals interested in learning how to facilitate. When searching for individuals in your organization to help facilitate postmortem meetings, look for people with these core competencies:
 
 - Reads non-verbal cues to assess how people are feeling in the room and sees who might have something to say.
-- araphrases what is said to clarify for self and others.
+- Paraphrases what is said to clarify for self and others.
 - Asks open questions to stimulate deeper thinking.
 - Comfortable interrupting when discussion gets off track or someone dominates the discussion.
 - Redirects conversation to focus on goals.
