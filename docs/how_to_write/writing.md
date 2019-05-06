@@ -101,7 +101,7 @@ Cook also says the effort to find the “root cause” does not reflect an under
 
 Start your analysis by looking at your monitoring for the affected services. Search for irregularities like sudden spikes or flatlining when the incident began and leading up to the incident. Include any commands or queries you use to look up data, graph images, or links from your monitoring tooling alongside this analysis so others can see how the data was gathered. If you do not have monitoring for this service or behavior, make building monitoring an action item for this postmortem. More on [writing action items](#followup) below.
 
-!!!  warming "Importance of Monitoring"
+!!!  warning "Importance of Monitoring"
     Puppet’s 2018 State of DevOps Report highlights making monitoring configurable by the team operating the service as a foundational practice for successful DevOps. Empowering teams to define, manage, and share their own measurement of performance contributes to a culture of continuous improvement.
 
 Another helpful strategy for targeting what caused an incident is reproducing it in a non-production environment. Experiment by modifying variables to isolate the phenomenon. If you modify or remove some input does the incident still occur?
