@@ -1,4 +1,4 @@
-# PagerDuty PostMortem Best Practice Documentation 
+# PagerDuty PostMortem Best Practice Documentation
 [![Build Status](https://circleci.com/gh/PagerDuty/postmortem-docs/tree/master.svg?style=svg)](https://circleci.com/gh/PagerDuty/postmortem-docs)
 
 This is a collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings. See the [home page](docs/index.md) for more information on what this documentation is and why it exists.
@@ -14,7 +14,7 @@ We use [MkDocs](http://www.mkdocs.org/) to create a static site from this reposi
 1. Install v0.1.1 of [MkDocs Bootstrap](https://github.com/mkdocs/mkdocs-bootstrap) `pip install mkdocs-bootstrap==0.1.1`
 1. Install v0.15.3 of [MkDocs](http://www.mkdocs.org/#installation). `pip install mkdocs==0.15.3`
 1. Install v0.2.4 of the [MkDocs Material theme](https://github.com/squidfunk/mkdocs-material). `pip install mkdocs-material==0.2.4`
-1. Install [MkDocs PyMdown Extensions](https://squidfunk.github.io/mkdocs-material/extensions/pymdown/). `pip install pymdown-extensions`
+1. Install v6.2.1 of [MkDocs PyMdown Extensions](https://squidfunk.github.io/mkdocs-material/extensions/pymdown/). `pip install pymdown-extensions==6.2.1`
 1. To test locally, run `mkdocs serve` from the project directory.
 
 ### Docker Option
