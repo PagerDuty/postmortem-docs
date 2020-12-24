@@ -1,8 +1,8 @@
 ---
-cover: assets/img/headers/how_to_introduce.png
+cover:
 description: A successful postmortem process is based on a culture of honesty, learning, and accountability. Culture change requires management buy-in, but you can lead culture change no matter your role. This guide describes common challenges faced in building a culture of continuous learning through postmortems and strategies for overcoming these challenges.
 ---
-![How to Introduce](../assets/img/headers/how_to_introduce.png)
+![How to Introduce](../assets/img/headers/Postmortems-Introduce.png)
 
 Whether you’re introducing postmortems as an entirely new practice at your organization or working to improve an existing process, culture change is hard. Change does not have to be driven by management. Often, bottom-up changes are more successful than top-down mandates from management. No matter your role, the first step to introducing a new process is getting buy-in from leadership and individual contributors.  
 

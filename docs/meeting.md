@@ -1,8 +1,8 @@
 ---
-cover: assets/img/headers/meeting.png
+cover:
 description: After you have completed the written postmortem, follow up with a meeting to discuss the incident. The purpose of this meeting is to deepen the postmortem analysis through direct communication and to get buy-in for action items.
 ---
-![The Postmortem Meeting](../assets/img/headers/meeting.png)
+![The Postmortem Meeting](../assets/img/headers/Postmortems-Meeting.png)
 
 ## Purpose
 After you have completed the written postmortem, follow up with a meeting to discuss the incident. **The purpose of this meeting is to deepen the postmortem analysis through direct communication and to get buy-in for action items.** The asynchronous production of the written postmortem helps the team start learning from the incident, but having a conversation leads to deeper learning. Furthermore, having a meeting scheduled to discuss the written postmortem creates [accountability](culture/accountability.md) for the postmortem to be completed in a timely manner. Using this time to discuss action items also helps ensure that those tasks will be completed.

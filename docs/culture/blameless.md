@@ -1,8 +1,8 @@
 ---
-cover: assets/img/covers/blameless.png
+cover:
 description: A successful postmortem process is based on a culture of honesty, learning, and accountability. Culture change requires management buy-in, but you can lead culture change no matter your role. This guide describes common challenges faced in building a culture of continuous learning through postmortems and strategies for overcoming these challenges.
 ---
-![Blameless](../assets/img/headers/blameless.png)
+![Blameless](../assets/img/headers/Postmortems-Blameless.png)
 
 As IT professionals, we understand that failure is inevitable in complex systems. **How we respond to failure when it occurs matters.** In *The Field Guide to Understanding Human Error*, Sidney Dekker describes two views on human error: 1) the old view, which asserts that people’s mistakes cause failure, and 2) the new view, which treats human error as a symptom of a systemic problem. The old view ascribes to “the bad apple theory,” which believes that removing bad actors will prevent failure. This view attaches an individual's character to their actions, assuming negligence or bad intent leads to the error.
 

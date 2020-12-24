@@ -1,7 +1,9 @@
 ---
-cover: assets/img/covers/reading.png
+cover:
 description: This is a collection of additional reading on the topic of incident response that we've found useful.
 ---
+![Futher Reading and Resources](../assets/img/headers/Postmortems-Resources.png)
+
 ## Creating a Blameless Culture
 ### Books
 * [The Field Guide to Understanding Human Error](https://www.amazon.com/Field-Guide-Understanding-Human-Error/dp/0754648265) (Sidney Dekker)

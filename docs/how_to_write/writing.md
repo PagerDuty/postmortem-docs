@@ -1,8 +1,8 @@
 ---
-cover: assets/img/covers/post-mortem_process.png
+cover:
 description: Here are concrete steps for producing a postmortem document. You will learn the most important information to include in the postmortem, how to collect and present that information, and how to conduct an effective analysis that results in system improvements.
 ---
-![Step by Step](../assets/img/headers/step_by_step.png)
+![Step by Step](../assets/img/headers/Postmortems-StepByStep.png)
 
 Below are the steps involved in performing a postmortem at a high level. Below are the details of how to perform each step.
 
@@ -36,6 +36,7 @@ After you are designated as the owner of a postmortem, create the postmortem doc
 
 ## Administration
 ![Administration](../assets/img/thumbnails/1Administration.png)
+
 1. Create the document.
 2. Add all responders to it.
 3. Schedule the meeting.
@@ -60,10 +61,10 @@ PagerDuty postmortems have a "Status" field that indicates where in our process 
 
 | Status | Description |
 |-|-|
-| **Draft** | Indicates that the content of the post-mortem is still being worked on. |
-| **In Review** | The content of the post-mortem has been completed, and is ready to be reviewed during the post-mortem meeting. |
+| **Draft** | Indicates that the content of the postmortem is still being worked on. |
+| **In Review** | The content of the postmortem has been completed, and is ready to be reviewed during the postmortem meeting. |
 | **Reviewed** | The meeting is over and the content has been reviewed and agreed upon.<br/>If there is an "External Message", the Customer Support team will take the message and update our status page as appropriate. |
-| **Closed** | No further actions are needed on the post-mortem (outstanding issues are tracked in JIRA).<br/>If no "External Message", you can skip straight to this once the meeting is over.<br/>If there's an "External Message", then the Support team will update it to this status once the message is posted. |
+| **Closed** | No further actions are needed on the postmortem (outstanding issues are tracked in JIRA).<br/>If no "External Message", you can skip straight to this once the meeting is over.<br/>If there's an "External Message", then the Support team will update it to this status once the message is posted. |
 
 ## Create a Timeline
 ![Timeline](../assets/img/thumbnails/2CreateATimeline.png)
@@ -101,7 +102,7 @@ Cook also says the effort to find the “root cause” does not reflect an under
 
 Start your analysis by looking at your monitoring for the affected services. Search for irregularities like sudden spikes or flatlining when the incident began and leading up to the incident. Include any commands or queries you use to look up data, graph images, or links from your monitoring tooling alongside this analysis so others can see how the data was gathered. If you do not have monitoring for this service or behavior, make building monitoring an action item for this postmortem. More on [writing action items](#followup) below.
 
-!!!  warning "Importance of Monitoring"
+!!! warning "Importance of Monitoring"
     Puppet’s 2018 State of DevOps Report highlights making monitoring configurable by the team operating the service as a foundational practice for successful DevOps. Empowering teams to define, manage, and share their own measurement of performance contributes to a culture of continuous improvement.
 
 Another helpful strategy for targeting what caused an incident is reproducing it in a non-production environment. Experiment by modifying variables to isolate the phenomenon. If you modify or remove some input does the incident still occur?

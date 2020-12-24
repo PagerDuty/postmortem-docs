@@ -1,7 +1,9 @@
 ---
-cover: 
-description: Questions to ask to stimulate deep postmortem analysis. 
+cover:
+description: Questions to ask to stimulate deep postmortem analysis.
 ---
+![Analysis](../assets/img/headers/Postmortems-Questions.png)
+
 Inspired by Gary Klein’s debriefing questions in Sidney Dekker’s *The Field Guide To Understanding Human Error*, below is a non-exhaustive list to help stimulate deep analysis. Ask “how” and “what” questions, rather than “who” or “why,” to discourage blame and encourage learning.  
 
 [Download as a PDF](../assets/pdf/PostmortemAnalysisQuestions.pdf).
@@ -14,7 +16,7 @@ Inspired by Gary Klein’s debriefing questions in Sidney Dekker’s *The Field 
                 <li>What were you focusing on?</li>
                 <li>What was not noticed?</li>
                 <li>What differed from what was expected?</li>
-            </ul> 
+            </ul>
         </td>
     </tr>
     <tr>
@@ -44,7 +46,7 @@ Inspired by Gary Klein’s debriefing questions in Sidney Dekker’s *The Field 
                 <li>What mistakes (for example, in interpretation) were likely?</li>
                 <li>How did you view the health of the services involved prior to the incident?</li>
                 <li>Did this incident teach you something that should change views about this service’s health?</li>
-            </ul> 
+            </ul>
         </td>
     </tr>
     <tr>

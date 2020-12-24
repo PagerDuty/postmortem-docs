@@ -1,8 +1,8 @@
 ---
-cover: assets/img/headers/accountability.png
+cover:
 description: A successful postmortem process is based on a culture of honesty, learning, and accountability. Culture change requires management buy-in, but you can lead culture change no matter your role. This guide describes common challenges faced in building a culture of continuous learning through postmortems and strategies for overcoming these challenges.
 ---
-![Accountability](../assets/img/headers/accountability.png)
+![Accountability](../assets/img/headers/Postmortems-Accountability.png)
 
 Information sharing and transparency also support an environment that cultivates accountability. A common challenge to effective postmortems is that, after analyzing the incident and creating action items to prevent recurrence, information sharing to increase transparency is never done.
 

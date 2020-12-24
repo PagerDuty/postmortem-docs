@@ -1,9 +1,11 @@
 ---
-cover: 
+cover:
 description: Examples of postmortems.
 ---
-## Examples
-Here are some examples of post-mortems from other companies as a reference,
+![Postmortem Examples](../assets/img/headers/Postmortems-Examples.png)
+
+
+Here are some examples of postmortems from other companies as a reference,
 
 * [Stripe](https://support.stripe.com/questions/outage-postmortem-2015-10-08-utc)
 * [LastPass](https://blog.lastpass.com/2015/06/lastpass-security-notice.html/comment-page-2/)
