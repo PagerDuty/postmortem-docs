@@ -21,13 +21,13 @@ Whereas the written postmortem is intended to be shared widely in the organizati
 ## Agenda
 Here is a sample agenda for the meeting:
 
-1. **Postmortem owner** summarizes incident causes and timeline.**Facilitator** leads discussion:
+1. **Postmortem owner** summarizes incident causes and timeline. **Facilitator** leads discussion:
     - What were the larger cultural and structural factors that lead to the incident? **How did we get here?**
 1. **Postmortem owner** summarizes proposed follow-up action items. **Facilitator** leads discussion:
     - Is the team **confident** this plan will reduce the likelihood of this incident recurring?
     - **What more or different work might be needed?**
     - Will team leadership (Engineering Manager, Product Manager, Tech Lead, etc.) **commit** to prioritizing these action items?
-1. **Customer liaison•• summarizes customer impact.
+1. **Customer liaison** summarizes customer impact.
     - Provide any new context about customer reaction to the incident.
     - Review and approve external communication drafted in the postmortem.
 
