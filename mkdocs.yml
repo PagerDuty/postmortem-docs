@@ -41,7 +41,7 @@ pages:
     - Accountability: 'culture/accountability.md'
   - How to Write a Postmortem:
     - Step by Step: 'how_to_write/writing.md'
-    - Tips for Effective Postmortems: 'how_to_write/effective_post_mortems.md'
+    - Tips for Effective Postmortems: 'how_to_write/effective_postmortems.md'
   - The Postmortem Meeting: 'meeting.md'
   - Resources:
     - Template: 'resources/post_mortem_template.md'
