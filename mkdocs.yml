@@ -43,6 +43,7 @@ pages:
     - Step by Step: 'how_to_write/writing.md'
     - Tips for Effective Postmortems: 'how_to_write/effective_postmortems.md'
   - The Postmortem Meeting: 'meeting.md'
+  - Next Steps: 'next_steps.md'
   - Resources:
     - Template: 'resources/post_mortem_template.md'
     - Checklist: 'resources/checklist.md'
