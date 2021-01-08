@@ -23,7 +23,7 @@ A successful postmortem process is based on a culture of honesty, learning, and 
 You will learn what information to include in the postmortem, how to collect and present that information, and how to conduct an effective analysis that results in system improvements.
 
 - [Step by Step](how_to_write/writing.md)
-- [Tips for Effective Postmortems](how_to_write/effective_post_mortems.md)
+- [Tips for Effective Postmortems](how_to_write/effective_postmortems.md)
 
 ### Postmortem Meetings
 How to conduct productive [postmortem meetings](meeting.md).
