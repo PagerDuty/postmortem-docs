@@ -19,7 +19,7 @@ We use [MkDocs](http://www.mkdocs.org/) to create a static site from this reposi
 
 ### Docker Option
 1. `docker build -t mkdocs .`
-1. `docker run -p 8080:8080 mkdocs`
+1. ``docker run -v `pwd`:/docs/ -p 8080:8080 mkdocs``
 
 ## Deploying
 1. Run `mkdocs build --clean` to produce the static site for upload.

@@ -1,4 +1,4 @@
-![PagerDuty](../assets/img/headers/postmortem.png)
+![PagerDuty](../assets/img/headers/Postmortems-Title.png)
 
 Performing postmortems after incidents is how you learn what you're doing right, where you could improve, and most importantly, how to avoid making the same mistakes again and again. Well-designed postmortems allow your teams to iteratively improve your infrastructure and incident response process.
 
@@ -11,7 +11,7 @@ This resource is for on-call practitioners who want to iteratively learn from in
 ### What Is a Postmortem?
 The who, what, when, and why of [postmortems](what_is.md).
 
-### Blameless Culture
+Blameless Culture#
 A successful postmortem process is based on a culture of honesty, learning, and accountability. Culture change requires management buy-in, but you can lead culture change no matter your role. This section describes common challenges in building a culture of continuous learning through postmortems, and strategies for overcoming them.
 
 - [The Blameless Postmortem](culture/blameless.md)
@@ -23,20 +23,20 @@ A successful postmortem process is based on a culture of honesty, learning, and 
 You will learn what information to include in the postmortem, how to collect and present that information, and how to conduct an effective analysis that results in system improvements.
 
 - [Step by Step](how_to_write/writing.md)
-- [Tips for Effective Postmortems](how_to_write/effective_post_mortems.md)
+- [Tips for Effective Postmortems](how_to_write/effective_postmortems.md)
 
 ### Postmortem Meetings
-How to conduct productive postmortem [meetings](meeting.md).
+How to conduct productive [postmortem meetings](meeting.md).
 
 ### Additional Resources
-* [Template](resources/post_mortem_template.md)
-* [Checklist](resources/checklist.md)
-* [Analysis Questions](resources/analysis.md)
-* [Examples](resources/examples.md)
-* [Further Reading](resources/reading.md)
 
-## License
+- [Template](resources/post_mortem_template.md)
+- [Checklist](resources/checklist.md)
+- [Analysis Questions](resources/analysis.md)
+- [Examples](resources/examples.md)
+- [Further Reading](resources/reading.md)
 
+### License
 This documentation is provided under the Apache License 2.0. In plain English that means you can use and modify this documentation and use it both commercially and for private use. However, you must include any original copyright notices, and the original LICENSE file.
 
 Whether you are a PagerDuty customer or not, we want you to have the ability to use this documentation internally at your own company. You can view the source code for all of this documentation on our GitHub account, feel free to fork the repository and use it as a base for your own internal documentation.
