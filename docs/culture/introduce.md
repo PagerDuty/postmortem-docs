@@ -6,7 +6,7 @@ description: A successful postmortem process is based on a culture of honesty, l
 
 Whether you're introducing postmortems as an entirely new practice at your organization or working to improve an existing process, culture change is hard. No matter your role, the first step to introducing a new process is getting buy-in from leadership and individual contributors because, often, bottom-up changes are more successful than top-down mandates from management.
 
-To practice blameless postmortems and encourage a culture of continuous improvement, you need commitment from leadership that no individuals will be reprimanded in any way after an incident. 
+To practice blameless postmortems and encourage a culture of continuous improvement, you need commitment from leadership that no individuals will be reprimanded in any way after an incident.
 
 To convince management to support a shift to blameless analysis, clarify how blame is harmful to the business and explain the business value of blamelessness. For instance, punishing individuals for "causing" incidents discourages people from speaking up when problems occur for fear of being blamed. This silence will increase the mean time to acknowledge incidents, mean time to resolve, and, ultimately, exacerbate the impact of incidents. Organizations can rapidly improve the resilience of their systems and increase the speed of innovation by eliminating the fear of blame and encouraging collaborative learning.
 
@@ -25,7 +25,7 @@ Culture change does not happen overnight. Iteratively introduce new practices to
 It is also easy to start practicing blameless postmortems by analyzing smaller incidents before tackling major ones. Doing postmortems for smaller incidents allows the team to develop the skill of deeper system analysis that goes beyond how people contributed to an incident. This also helps protect individuals while everyone is practicing blameless culture as people may revert to blame, but the impact on the individual will be less than if that same mistake happens with a more critical incident.
 
 !!! info "Key Takeaways"
-- Sell the business value of blamelessness: faster incident resolution, more resilient systems, more time for innovation
-- Commit to kindly calling each other out when blame is observed
-- Start with a single team
-- Start with smaller incidents
+    - Sell the business value of blamelessness: faster incident resolution, more resilient systems, more time for innovation
+    - Commit to kindly calling each other out when blame is observed
+    - Start with a single team
+    - Start with smaller incidents

@@ -1,4 +1,4 @@
-![PagerDuty](../assets/img/headers/Postmortems-Title.png)
+![PagerDuty](assets/img/headers/Postmortems-Title.png)
 
 Performing postmortems after incidents is how you learn what you're doing right, where you could improve, and most importantly, how to avoid making the same mistakes again and again. Well-designed postmortems allow your teams to iteratively improve your infrastructure and incident response process.
 

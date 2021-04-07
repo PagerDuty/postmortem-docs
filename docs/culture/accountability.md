@@ -15,7 +15,7 @@ We have also seen improved accountability for completing action items by involvi
 Finally, ensure postmortem action items are discoverable and regularly viewed. Document postmortem action items as you would any other task. The list of action items from an incident analysis should not only live in your postmortem document. Open tickets in your task management tool, within the project of the team that will own the action item, so it can be viewed alongside all other planned work. We label all tickets with the severity level (Sev-1, Sev-2, etc.) and a date tag (YYYYMMDD) so we can easily query tickets that came from specific incidents and build reporting for the number of open tickets from major incidents.
 
 !!! info "Key Takeaways"
-- Set a policy for postmortem action items: e.g. 15 days for Sev-1 action items, 30 days for Sev-2 action items.
-- Clarify ownership of postmortem action items.
-- Engage the leaders that prioritize work.
-- Open tickets for postmortem action items in your work management ticketing system.
+    - Set a policy for postmortem action items: e.g. 15 days for Sev-1 action items, 30 days for Sev-2 action items.
+    - Clarify ownership of postmortem action items.
+    - Engage the leaders that prioritize work.
+    - Open tickets for postmortem action items in your work management ticketing system.
