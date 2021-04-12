@@ -2,7 +2,7 @@
 cover:
 description: After you have completed the written postmortem, follow up with a meeting to discuss the incident. The purpose of this meeting is to deepen the postmortem analysis through direct communication and to get buy-in for action items.
 ---
-![The Postmortem Meeting](../assets/img/headers/Postmortems-Meeting.png)
+![The Postmortem Meeting](assets/img/headers/Postmortems-Meeting.png)
 
 ## Purpose
 After you have completed the written postmortem, follow up with a meeting to discuss the incident. **The purpose of this meeting is to deepen the postmortem analysis through direct communication and to get buy-in for action items.** The asynchronous production of the written postmortem helps the team start learning from the incident, but having a conversation leads to deeper learning. Furthermore, having a meeting scheduled to discuss the written postmortem creates [accountability](culture/accountability.md) for the postmortem to be completed in a timely manner. Using this time to discuss action items also helps ensure that those tasks will be completed.
@@ -66,7 +66,7 @@ The facilitator does not:
 
 - Make decisions.
 - Take sides. If the facilitator takes sides, team members might feel attacked and might stop contributing to the meeting.
-    - Comment on what people say, even if they are trying to give positive feedback. It may make the speaker feel validated, but it might also make the others feel worse about what they have to say or discourage them from contributing something. 
+    - Comment on what people say, even if they are trying to give positive feedback. It may make the speaker feel validated, but it might also make the others feel worse about what they have to say or discourage them from contributing something.
 
 ### Who Should Facilitate
 Good facilitators tend to have a high level of emotional intelligence and can easily read non-verbal cues to understand how people are feeling. They use this sense to cultivate an environment where everyone is comfortable speaking. Agile coaches and project managers are often skilled facilitators. At PagerDuty, we have a guild of confident facilitators who coach individuals interested in learning how to facilitate. When searching for individuals in your organization to help facilitate postmortem meetings, look for people with these core competencies:

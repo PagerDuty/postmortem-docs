@@ -2,7 +2,7 @@
 cover:
 description: The basics of Postmortems. Why postmortems are important, when they should be done, and who is responsible for the postmortem.
 ---
-![What is a Postmortem?](../assets/img/headers/Postmortems-WhatIs.png)
+![What is a Postmortem?](assets/img/headers/Postmortems-WhatIs.png)
 
 > What went wrong and how do we learn from it?
 

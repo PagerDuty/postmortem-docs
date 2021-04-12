@@ -49,8 +49,8 @@ In his article “[The Infinite Hows](https://www.oreilly.com/ideas/the-infinite
 Even when you have made a best effort to remain blameless, it is possible someone may still become defensive during a postmortem meeting if they feel they are being blamed. When this happens, work to restore mutual purpose and mutual respect so a productive discussion can continue. Restore mutual purpose by reiterating that the goal of the postmortem is to understand what systemic factors lead to the incident and collaboratively identify actions that can reduce failure moving forward. Often, people act out defensively when they feel their character is being attacked. Restore mutual respect by contrasting. Say what you did not intend (“I did not mean to imply you’re bad at your job.”) contrasted with what you do intend (“I meant to inquire to the situational factors that would lead any responder to take that action.”) Refocus your inquiry away from individual motivation, which implies blame. Abstracting to an inspecific responder also encourages other responders to contribute more suggestions as to what could have contributed to the system failure.
 
 !!! info "Key Takeaways"
-- Ask “what” and “how” questions rather than “who” or “why.”
-- Consider multiple and diverse perspectives.
-- Ask yourself why a reasonable, rational, and decent person may have taken a particular action.
-- When inquiring about a human action, abstract to an inspecific responder. Anyone could have made the same mistake.
-- Restore mutual purpose and mutual respect by contrasting what you did not intend with what you do intend.
+    - Ask “what” and “how” questions rather than “who” or “why.”
+    - Consider multiple and diverse perspectives.
+    - Ask yourself why a reasonable, rational, and decent person may have taken a particular action.
+    - When inquiring about a human action, abstract to an inspecific responder. Anyone could have made the same mistake.
+    - Restore mutual purpose and mutual respect by contrasting what you did not intend with what you do intend.
