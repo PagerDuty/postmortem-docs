@@ -14,7 +14,7 @@ An anti-pattern for the postmortem meeting is to be overly focused on the immedi
 
     This will help you avoid wasting time in the meeting simply reading through the document. Remember the purpose of the meeting is to have an in-depth conversation about what caused the incident and how to prevent it in the future, not to review the document. The postmortem meeting is also an opportunity to clarify any questions about what happened and what the team plans to do to prevent it from happening again. Encourage attendees to ask any and all questions to help everyone get on the same page and help the team consider new perspectives for their analysis.
 
-**The most important outcome of the postmortem meeting is buy-in for the action plan.** This is an opportunity to discuss proposed [action items](/how_to_write/writing.md), brainstorm other options, and gain consensus among team leadership. Sometimes the ROI of proposed action items is not great enough to justify the work or postmortem action items must be delayed for other priorities. The postmortem meeting is a time to discuss these difficult decisions and make clear what work will and will not be done, as well as the expected implications of those choices.
+**The most important outcome of the postmortem meeting is buy-in for the action plan.** This is an opportunity to discuss proposed [action items](how_to_write/writing.md), brainstorm other options, and gain consensus among team leadership. Sometimes the ROI of proposed action items is not great enough to justify the work or postmortem action items must be delayed for other priorities. The postmortem meeting is a time to discuss these difficult decisions and make clear what work will and will not be done, as well as the expected implications of those choices.
 
 Whereas the written postmortem is intended to be shared widely in the organization, the primary audience for the postmortem meeting is the teams directly involved with the incident. This meeting gives the team a chance to align on what happened, what to do about it, and how they will communicate about the incident to internal and external stakeholders.
 
@@ -129,4 +129,4 @@ The postmortem meeting facilitator helps the team dig deeper into their analysis
 **How to stimulate analysis:**
 
 - Ask open questions, no questions that can be answered with "yes" or "no."
-- Reference our [analysis questions](/resources/analysis.md). The team may have asked themselves these questions as they were preparing the written postmortem. Asking some of these in the meeting will encourage new, collaborative thinking.
+- Reference our [analysis questions](resources/analysis.md). The team may have asked themselves these questions as they were preparing the written postmortem. Asking some of these in the meeting will encourage new, collaborative thinking.
