@@ -9,14 +9,22 @@ After you have completed the written postmortem, follow up with a meeting to dis
 
 An anti-pattern for the postmortem meeting is to be overly focused on the immediate concerns documented in the written postmortem. Avoid filling the meeting time by simply reading through each section of the document. The best use of this time is to take a step back from the detailed analysis to better understand the systemic factors that led to the incident.
 
-!!! tip
-    Send a link to the postmortem document to meeting attendees 24 hours before the meeting. Though the postmortem does not need to be complete when it is sent to the attendees, it should be finished before the postmortem meeting. It is still worth sending an incomplete postmortem to meeting attendees in advance so they can start reading through the document.
+Some teams make use of the [Retrospective Prime Directive](http://retrospectivewiki.org/index.php?title=The_Prime_Directive) to set the tone for the meeting and serve as a regular reminder of the goals. It can be a helpful tool to anchor the discussion and provide a clean slate to start a retrospective, postmortem, or post-incident review.
 
-    This will help you avoid wasting time in the meeting simply reading through the document. Remember the purpose of the meeting is to have an in-depth conversation about what caused the incident and how to prevent it in the future, not to review the document. The postmortem meeting is also an opportunity to clarify any questions about what happened and what the team plans to do to prevent it from happening again. Encourage attendees to ask any and all questions to help everyone get on the same page and help the team consider new perspectives for their analysis.
+>
+  "Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand."
+  --Norm Kerth, Project Retrospectives: A Handbook for Team Review
+
 
 **The most important outcome of the postmortem meeting is buy-in for the action plan.** This is an opportunity to discuss proposed [action items](how_to_write/writing.md), brainstorm other options, and gain consensus among team leadership. Sometimes the ROI of proposed action items is not great enough to justify the work or postmortem action items must be delayed for other priorities. The postmortem meeting is a time to discuss these difficult decisions and make clear what work will and will not be done, as well as the expected implications of those choices.
 
 Whereas the written postmortem is intended to be shared widely in the organization, the primary audience for the postmortem meeting is the teams directly involved with the incident. This meeting gives the team a chance to align on what happened, what to do about it, and how they will communicate about the incident to internal and external stakeholders.
+
+!!! tip
+    Send a link to the postmortem document to meeting attendees 24 hours before the meeting. Though the postmortem does not need to be complete when it is sent to the attendees, it should be finished before the postmortem meeting. It is still worth sending an incomplete postmortem to meeting attendees in advance so they can start reading through the document.
+
+    This will help you avoid wasting time in the meeting simply reading through the document. Remember the purpose of the meeting is to have an in-depth conversation about what caused the incident and how to prevent it in the future, not to review the document. The postmortem meeting is also an opportunity to clarify any questions about what happened and what the team plans to do to prevent it from happening again. Encourage attendees to ask any and all questions to help everyone get on the same page
+    and help the team consider new perspectives for their analysis.
 
 ## Agenda
 Here is a sample agenda for the meeting:
