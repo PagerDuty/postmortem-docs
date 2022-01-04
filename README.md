@@ -1,5 +1,5 @@
 # PagerDuty PostMortem Best Practice Documentation
-[![Build Status](https://circleci.com/gh/PagerDuty/postmortem-docs/tree/master.svg?style=svg)](https://circleci.com/gh/PagerDuty/postmortem-docs)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0552001b-35ae-4513-ae3a-3362c0b95fc3/deploy-status)](https://app.netlify.com/sites/postmortems-1e8475/deploys)
 
 This is a collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings. See the [home page](docs/index.md) for more information on what this documentation is and why it exists.
 
