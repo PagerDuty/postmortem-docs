@@ -18,7 +18,7 @@ Organizations may refer to the postmortem process in slightly different terms:
 - Root Cause Analysis (or RCA)
 
 ## Why Do Postmortems
-During incident response, the team is 100% focused on restoring service. They cannot (and should not) be wasting time and mental energy thinking about how to do something optimally or performing a deep dive on what caused the incident. That's why postmortems are essential—they provide a peacetime opportunity to reflect once the issue is no longer impacting users. **The postmortem process drives focus, instills a culture of learning, and identifies opportunities for improvement that otherwise would be lost.**
+During incident response, the team is 100% focused on restoring service. They cannot (and should not) be wasting time and mental energy thinking about how to do something optimally or performing a deep dive on what caused the incident. That's why postmortems are essential—they provide an opportunity to reflect once the issue is no longer impacting users. **The postmortem process drives focus, instills a culture of learning, and identifies opportunities for improvement that otherwise would be lost.**
 
 Without a postmortem, you fail to recognize what you're doing right, where you could improve, and, most importantly, how to avoid making the same mistakes in the future. Conducting an effective postmortem allows you to learn quickly from your mistakes and improve your systems and processes. A well-designed, blameless postmortem allows teams to continuously learn, serving as a way to iteratively improve your infrastructure and incident response process. Be sure to write detailed and accurate postmortems in order to get the most benefit out of them.
 
