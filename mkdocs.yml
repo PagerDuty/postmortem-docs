@@ -1,11 +1,11 @@
 # Project Information
-site_name: PagerDuty Postmortem Documentation
-site_description: A collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings.
-site_author: PagerDuty, Inc.
+site_name: Riskified Postmortem Documentation
+site_description: A collection of information about the postmortem process and best practices in Riskified, based on the PagerDuty postmortem process and industry best practices documentation. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings.
+site_author: PagerDuty, Inc. / Riskified
 site_url: https://postmortems.pagerduty.com/
 
 # Repository
-repo_url: https://github.com/pagerduty/postmortem-docs
+repo_url: https://github.com/KirilYurovnikRiski/postmortem-docs
 
 # Copyright
 copyright: 'Copyright &copy; PagerDuty, Inc.'
