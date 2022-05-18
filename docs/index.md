@@ -11,7 +11,7 @@ This resource is for on-call practitioners who want to iteratively learn from in
 ### What Is a Postmortem?
 The who, what, when, and why of [postmortems](what_is.md).
 
-Blameless Culture#
+### Blameless Culture
 A successful postmortem process is based on a culture of honesty, learning, and accountability. Culture change requires management buy-in, but you can lead culture change no matter your role. This section describes common challenges in building a culture of continuous learning through postmortems, and strategies for overcoming them.
 
 - [The Blameless Postmortem](culture/blameless.md)
