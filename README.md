@@ -1,9 +1,9 @@
 # PagerDuty PostMortem Best Practice Documentation
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0552001b-35ae-4513-ae3a-3362c0b95fc3/deploy-status)](https://app.netlify.com/sites/postmortems-1e8475/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/435d9a10-b0be-41e0-b63f-eed4dd329b85/deploy-status)](https://app.netlify.com/sites/riskified-postmortems/deploys)
 
-This is a collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings. See the [home page](docs/index.md) for more information on what this documentation is and why it exists.
+This is a collection of information about the postmortem process and best practices in Riskified, based on the [PagerDuty postmortem process and industry best practices documentation](https://postmortems.pagerduty.com). This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings. See the [home page](docs/index.md) for more information on what this documentation is and why it exists.
 
-You can view the documentation [directly](docs/index.md) in this repository, or rendered as a website at https://postmortems.pagerduty.com.
+You can view the documentation [directly](docs/index.md) in this repository, or rendered as a website at https://riskified-postmortems.netlify.app.
 
 [![PagerDuty Postmortems Documentation](screenshot.png)](https://postmortems.pagerduty.com)
 
