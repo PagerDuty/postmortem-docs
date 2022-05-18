@@ -7,28 +7,27 @@ description: Here are concrete steps for producing a postmortem document. You wi
 Below are the steps involved in performing a postmortem at a high level. Below are the details of how to perform each step.
 
 1. Create a new postmortem for the incident.
-1. Schedule a postmortem meeting within the required timeframe for all required and optional attendees on the "Incident Postmortem Meetings" shared calendar.
 1. Populate the incident timeline with important changes in status/impact and key actions taken by responders.
-    - For each item in the timeline, include a metric or some third-party page where the data came from.
+1. Schedule a postmortem meeting within the required timeframe for all required and optional attendees.
+     - For each item in the timeline, include a metric or some third-party page where the data came from.
 1. Analyze the incident.
     - Identify superficial and root causes.
     - Consider technology and process.
-1. Open any follow-up action tickets.
-1. Write the external messaging.
+1. Open any immediate follow-up action tickets.
+    - These, as well as additional ones, will be discussed in the postmortem meeting.
 1. Ask for review.
 1. Attend the postmortem meeting.
 1. Share the postmortem.
 
 ## Owner Responsibilities
-At the end of a major incident call, or very shortly after, the [Incident Commander](https://response.pagerduty.com/training/incident_commander/) selects one responder to own the postmortem. The selected owner will be notified directly by the Incident Commander. Writing the postmortem will ultimately be a collaborative effort, but selecting a single owner will help ensure it gets done.
+At the end of a major incident call, the incident response team decides on one responder to own the postmortem. Writing the postmortem will ultimately be a collaborative effort, but selecting a single owner will help ensure it gets done.
 
 The owner of a postmortem is responsible for the following:
 
-- Scheduling the postmortem meeting on the shared calendar and inviting the relevant people (this should be scheduled within 3 calendar days for a Sev-1 and 5 business days for a Sev-2).
+- Scheduling the postmortem meeting and inviting the relevant people (this should be scheduled within a week from the incident).
 - Investigating the incident, pulling in whoever is needed from other teams to assist in the investigation.
-- Ensuring the page is updated with all of the necessary content. See our [Template](../resources/post_mortem_template.md) for what should be included.
-- Creating follow-up tickets. (The owner is only responsible for creating the tickets, not following them up to resolution).
-- Reviewing the postmortem content with appropriate parties before the meeting, and running through the topics at the postmortem meeting (the Incident Commander will "run" the meeting and keep the discussion on track, but you will likely be doing most of the talking).
+- Ensuring the page is updated with all of the necessary content. See our [Template](https://riskified.atlassian.net/wiki/spaces/DEV/pages/3306618888/Template+YYYY-MM-DD+Incident+Title) for what should be included.
+- Reviewing the postmortem content with appropriate parties before the meeting, and running through the topics at the postmortem meeting.
 - Communicating the results of the postmortem internally.
 
 The owner of a postmortem creates the postmortem document and updates it with all relevant information.
@@ -41,31 +40,20 @@ The owner of a postmortem creates the postmortem document and updates it with al
 2. Add all responders to it.
 3. Schedule the meeting.
 
-If not already done by the Incident Commander, the postmortem owner's first step is to create a new, empty postmortem for the Incident. Go through the history in Slack to identify the responders and add them to the page so they can help populate the postmortem. Include the Incident Commander and Scribe as well. Add a link to the incident call recording.
+The postmortem owner's first step is to create a new, empty postmortem for the Incident. Go through the history in Slack to identify the responders and add them to the page so they can help populate the postmortem.
 
-Next, schedule the postmortem meeting for 30 minutes to an hour, depending on complexity of the incident. Scheduling the meeting at the beginning of the process helps ensure the postmortem is completed within the SLA. **The meeting should be scheduled within 3 calendar days for a Sev-1 and 5 business days for a Sev-2.** Don't worry about finding the best time for all attendees. The priority is to schedule within this timeframe and attendees should adjust their schedules accordingly. At PagerDuty, we schedule all postmortem meetings on a shared "Incident Postmortem Meetings" calendar so they are easily discoverable for any interested parties across the organization.
+Next, schedule the postmortem meeting for 30 minutes to an hour, depending on complexity of the incident. Scheduling the meeting at the beginning of the process helps ensure the postmortem is completed within the SLA. **The meeting should be scheduled within a week from the incident.** Don't worry about finding the best time for all attendees. The priority is to schedule within this timeframe and attendees should adjust their schedules accordingly.
 
 Invite the following people to the postmortem meeting:
 
 - Always
-    - The [incident commander](https://response.pagerduty.com/training/incident_commander/).
-    - The incident commander shadowee (if there was one).
     - [Service owners](https://response.pagerduty.com/training/subject_matter_expert/) involved in the incident.
     - Key engineer(s)/responders involved in the incident.
     - Engineering manager for impacted systems.
     - Product manager for impacted systems.
 - Optional
-    - [Customer liaison](https://response.pagerduty.com/training/customer_liaison/) (only for Sev-1 incidents).
-
-PagerDuty postmortems have a "Status" field that indicates where in our process the postmortem currently is. Here's a description of the values and how we use them.
-
-| Status | Description |
-|-|-|
-| **Draft** | Indicates that the content of the postmortem is still being worked on. |
-| **In Review** | The content of the postmortem has been completed, and is ready to be reviewed during the postmortem meeting. |
-| **Reviewed** | The meeting is over and the content has been reviewed and agreed upon.<br/>If there is an "External Message", the Customer Support team will take the message and update our status page as appropriate. |
-| **Closed** | No further actions are needed on the postmortem (outstanding issues are tracked in JIRA).<br/>If no "External Message", you can skip straight to this once the meeting is over.<br/>If there's an "External Message", then the Support team will update it to this status once the message is posted. |
-
+    - The company Incident Manager (for major incidents).
+    
 ## Create a Timeline
 ![Timeline](../assets/img/thumbnails/2CreateATimeline.png)
 Begin by focusing on the timeline. Document the facts of what happened during the incident. Avoid evaluating what should or should not have been done and coming to conclusions about what caused the incident. Presenting only the facts here will help avoid blame and supports a deeper analysis. Note the incident may have started before responders became aware of it and began the response effort. The timeline includes important changes in status/impact and key actions taken by responders. To avoid hindsight bias, start your timeline at a point before the incident and work your way forward instead of backwards from resolution.
@@ -116,9 +104,6 @@ Here are some questions to help the postmortem owner identify the class of a par
 - Was there work the team chose not to do in the past that contributed to this incident?
 - Research if there were any similar or related incidents in the past. Does this incident demonstrate a larger trend in your system?
 - Will this class of issue get worse/more likely as you continue to grow and scale the use of the service?
-
-!!! tip
-    At PagerDuty, we have a separate process for analyzing larger trends across multiple incidents to inform technical and organizational planning. Learn more in our guide on [Operational Reviews](http://reviews.pagerduty.com).
 
 Though it may not be a root cause, consider the process in your analysis. Did the way that people collaborate, communicate, and/or review work contribute to the incident? This is also an opportunity to evaluate and improve the incident response process. Consider what worked well and didn't work well within the incident response process during the incident.
 
@@ -212,7 +197,7 @@ After identifying what caused the incident, ask what needs to be done to prevent
 
 It may not be possible (or worth the effort) to completely eliminate the possibility of this same incident or a similar incident from happening again, so also consider how you can improve detection and mitigation of future incidents. Does the team need better monitoring and alerting around this class of problem so they can respond faster in the future? If this class of incident does happen again, how can the team decrease the severity or duration? Remember to identify any actions that can make the incident response process better, too. Go through the incident history in Slack to find any to-do items raised during the incident and make sure these are documented as tickets as well. (At this phase, you are only opening tickets. There is no expectation that tasks will be completed before the postmortem meeting.)
 
-Create tickets for all proposed follow-up actions in your task management tool. Label all tickets with their severity level and date tags so they can be easily found and reported in the ticketing system. Provide as much context and proposed direction on the tickets as you can so the team's product owner will have enough information to prioritize the task against other work and the eventual assignee will have enough information to complete the task.
+Create tickets for all proposed follow-up actions in your task management tool. Label all tickets with the `postmortem-action-item` label. Provide as much context and proposed direction on the tickets as you can so the team's product owner will have enough information to prioritize the task against other work and the eventual assignee will have enough information to complete the task.
 
 In the _;login:_ magazine article, "[Postmortem Action Items: Plan the Work and Work the Plan](https://www.usenix.org/system/files/login/articles/login_spring17_09_lunney.pdf)," John Lunney, Sue Lueder, and Betsy Beyer write about how Google writes postmortem action items to ensure they are completed quickly and easily. They advise all action items to be written as actionable, specific, and bounded.
 
@@ -241,23 +226,8 @@ Note the person who creates the ticket is not responsible for completing it. Tic
     * How can you decrease the severity or duration of this type of incident?
     * Write actionable, specific, and bounded tasks.
 
-## Write External Messaging
-![External](../assets/img/thumbnails/6WriteExternalMessaging.png)
-The goal of external messaging is to build trust by giving customers enough information about what happened and what you're doing about it, without giving away proprietary information about your technology and organization. There are parts of your internal analysis that primarily benefit the internal audience and do not need to be included in your external postmortem.
-
-The external postmortem is a summarized and sanitized version of the information used for the internal postmortem. External postmortems include these three sections:
-
-1. **Summary:** Two to three sentences that summarize the duration of the incident and the observable customer impact.
-1. **What Happened:** 
-    - Summary of cause(s).
-    - Summary of customer-facing impact during the incident.
-    - Summary of mitigation efforts during the incident.
-1. **What Are We Doing About This:** Summary of action items.
-
->Tip: Avoid using the word "outage" unless it really was a full outage—use the word "incident" or "service degradation" instead. Customers generally see "outage" and assume the worst.
-
-Note that at this point, the external postmortem is drafted language that should not be sent or published. It needs to be reviewed during the postmortem meeting before being sent out.
-
+<!-- TODO: Consider starting a postmortem review process: -->
+<!--
 ## Postmortem Review
 ![Review](../assets/img/thumbnails/7PostmortemReview.png)
 At PagerDuty, we have a community of experienced postmortem writers available to review postmortems for style and content. This avoids wasted time during the meeting. We post a link to the postmortem into Slack to receive feedback at least 24 hours before the meeting is scheduled.
@@ -272,3 +242,4 @@ Here are some of the things we look for:
 - Does the external message resonate well with customers or is it likely to cause outrage?
 
 Reviewing a postmortem isn't about nitpicking typos (but do make sure the external message isn't littered with spelling and grammatical errors). It's about providing constructive feedback on valuable changes to a postmortem to get the most benefit from them.
+-->

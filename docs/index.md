@@ -15,7 +15,6 @@ The who, what, when, and why of [postmortems](what_is.md).
 A successful postmortem process is based on a culture of honesty, learning, and accountability. Culture change requires management buy-in, but you can lead culture change no matter your role. This section describes common challenges in building a culture of continuous learning through postmortems, and strategies for overcoming them.
 
 - [The Blameless Postmortem](culture/blameless.md)
-- [How to Introduce Postmortems](culture/introduce.md)
 - [Information Sharing](culture/sharing.md)
 - [Accountability](culture/accountability.md)
 
@@ -30,13 +29,8 @@ How to conduct productive [postmortem meetings](meeting.md).
 
 ### Additional Resources
 
-- [Template](resources/post_mortem_template.md)
-- [Checklist](resources/checklist.md)
+- [Template](https://riskified.atlassian.net/wiki/spaces/DEV/pages/3306618888/Template+YYYY-MM-DD+Incident+Title)
+- [Checklist](resources/checklist.md) <!-- TODO: Create Riskified-specific checklist -->
 - [Analysis Questions](resources/analysis.md)
 - [Examples](resources/examples.md)
 - [Further Reading](resources/reading.md)
-
-### License
-This documentation is provided under the Apache License 2.0. In plain English that means you can use and modify this documentation and use it both commercially and for private use. However, you must include any original copyright notices, and the original LICENSE file.
-
-Whether you are a PagerDuty customer or not, we want you to have the ability to use this documentation internally at your own company. You can view the source code for all of this documentation on our GitHub account, feel free to fork the repository and use it as a base for your own internal documentation.

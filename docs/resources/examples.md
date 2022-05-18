@@ -5,10 +5,10 @@ description: Examples of postmortems.
 ![Postmortem Examples](../assets/img/headers/Postmortems-Examples.png)
 
 
-Here are some examples of postmortems from other companies as a reference,
+Here are some examples of postmortems from other companies as a reference:
 
-* [Stripe](https://support.stripe.com/questions/outage-postmortem-2015-10-08-utc)
-* [LastPass](https://blog.lastpass.com/2015/06/lastpass-security-notice.html/comment-page-2/)
+<!-- TODO: Add good examples of Riskified postmortems -->
+
 * [AWS](https://aws.amazon.com/message/5467D2/)
 * [Twilio](https://www.twilio.com/blog/2013/07/billing-incident-post-mortem-breakdown-analysis-and-root-cause.html)
 * [Heroku](https://status.heroku.com/incidents/151)

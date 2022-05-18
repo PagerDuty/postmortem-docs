@@ -29,24 +29,19 @@ Whereas the written postmortem is intended to be shared widely in the organizati
 ## Agenda
 Here is a sample agenda for the meeting:
 
-1. **Postmortem owner** summarizes incident causes and timeline. **Facilitator** leads discussion:
+1. **Postmortem owner** summarizes incident causes and timeline, and leads discussion:
     - What were the larger cultural and structural factors that lead to the incident? **How did we get here?**
-1. **Postmortem owner** summarizes proposed follow-up action items. **Facilitator** leads discussion:
+1. **Postmortem owner** summarizes proposed follow-up action items, and leads discussion:
     - Is the team **confident** this plan will reduce the likelihood of this incident recurring?
     - **What more or different work might be needed?**
     - Will team leadership (Engineering Manager, Product Manager, Tech Lead, etc.) **commit** to prioritizing these action items?
-1. **Customer liaison** summarizes customer impact.
+1. **Postmortem owner** (or company **Incident Manager**, if present) summarizes customer impact.
     - Provide any new context about customer reaction to the incident.
-    - Review and approve external communication drafted in the postmortem.
 
 ## Who Participates
 The postmortem owner invites the following people to the postmortem meeting. Below is more detail about the role each plays in the discussion.
 
 - Always
-    - The [incident commander](https://response.pagerduty.com/training/incident_commander/).
-        - The incident commander is responsible for coordinating the response. During the postmortem meeting the incident commander can provide valuable feedback on the incident response effort and process improvements.
-    - The incident commander shadowee (if there was one).
-        - This person may have served as the [scribe](https://response.pagerduty.com/training/scribe/) or [deputy](https://response.pagerduty.com/training/deputy/). The deputy incident commander is responsible for adding necessary responders to the call and updating internal stakeholders outside of the incident response call. The deputy can provide valuable feedback on the response effort and the ease or difficulty of communicating with additional responders and stakeholders during incident response.
     - [Service owners](https://response.pagerduty.com/training/subject_matter_expert/) and other key engineers involved in the incident.
         - On-call service owners and other engineers that responded to the incident are the experts of the affected services. During the postmortem meeting they can provide historical context about how the systems were built, cultural context about what was happening with the team leading up the incident, and proposals for what work would reduce the likelihood of this incident recurring.
         - Productive postmortem discussions will include engineers with in-depth knowledge of the part of the system that their team owns. If the engineer(s) that responded to the incident are newer to the team, it will be helpful to include more experienced engineers from their team in the postmortem meeting.
@@ -54,10 +49,12 @@ The postmortem owner invites the following people to the postmortem meeting. Bel
         - The manager responsible for the teams that responded to the incident attends the postmortem meeting to inform their staffing and technical investment decisions
     - Product manager for impacted systems.
         - Product managers attend postmortem meetings to understand the effect incidents have on their customers' experience. For postmortem action items to be prioritized and completed, it is critical to engage product managers in this discussion of the importance and scope of proposed follow-up tasks.
-- Optional (Only Sev-1 incidents)
-    - [Customer liaison](https://response.pagerduty.com/training/customer_liaison/).
-        - The customer liaison can speak to customers' reactions to the incident. They need to understand the team's decision on action items so they can finalize and send external messaging.
+- Optional (Only major incidents)
+    - Company Incident Manager.
+        - The incident manager can speak to customers' reactions to the incident. They need to understand the team's decision on action items so they can finalize and send external messaging, if needed.
 
+<!-- TODO: Consider adding a section about facilitation (or rather, communication in a postmortem meeting) -->
+<!--
 ## Facilitation
 ### What Is Facilitation
 The facilitator's role in the postmortem meeting is different from the other participants. The facilitator does not voice their own ideas in the meeting; instead, they encourage the group to speak up and keep the discussion on track. The postmortem owner, the incident commander, or any other meeting attendee that played an active role during the incident are the ones who need to contribute to the discussion and should not also be responsible for facilitating.
@@ -138,3 +135,4 @@ The postmortem meeting facilitator helps the team dig deeper into their analysis
 
 - Ask open questions, no questions that can be answered with "yes" or "no."
 - Reference our [analysis questions](resources/analysis.md). The team may have asked themselves these questions as they were preparing the written postmortem. Asking some of these in the meeting will encourage new, collaborative thinking.
+-->

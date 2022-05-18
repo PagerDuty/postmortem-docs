@@ -6,6 +6,7 @@ description: This is a collection of additional reading on the topic of incident
 
 ## Creating a Blameless Culture
 ### Books
+* [Site Reliability Engineering / Chapter 15 - Postmortem Culture: Learning from Failure](https://sre.google/sre-book/postmortem-culture/) (Google)
 * [The Field Guide to Understanding Human Error](https://www.amazon.com/Field-Guide-Understanding-Human-Error/dp/0754648265) (Sidney Dekker)
 * [Crucial Accountability](https://www.amazon.com/Crucial-Accountability-Resolving-Expectations-Commitments/dp/0071829318) (Kerry Patterson, Joseph Grenny, Ron McMillan, Al Switzler, David Maxfield)
 

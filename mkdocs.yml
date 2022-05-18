@@ -25,17 +25,14 @@ nav:
   - What Is a Postmortem: 'what_is.md'
   - Blameless Culture:
     - The Blameless Postmortem: 'culture/blameless.md'
-    - How to Introduce Postmortems: 'culture/introduce.md'
     - Information Sharing: 'culture/sharing.md'
     - Accountability: 'culture/accountability.md'
   - How to Write a Postmortem:
     - Step by Step: 'how_to_write/writing.md'
     - Tips for Effective Postmortems: 'how_to_write/effective_postmortems.md'
   - The Postmortem Meeting: 'meeting.md'
-  - Next Steps: 'next_steps.md'
   - Resources:
-    - Template: 'resources/post_mortem_template.md'
-    - Checklist: 'resources/checklist.md'
+#    - Checklist: 'resources/checklist.md'  # TODO: Add our own checklist?
     - Analysis Questions: 'resources/analysis.md'
     - Examples: 'resources/examples.md'
     - Further Reading: 'resources/reading.md'
