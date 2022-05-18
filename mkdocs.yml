@@ -32,6 +32,7 @@ nav:
     - Tips for Effective Postmortems: 'how_to_write/effective_postmortems.md'
   - The Postmortem Meeting: 'meeting.md'
   - Resources:
+    - Template: 'https://riskified.atlassian.net/wiki/spaces/DEV/pages/3306618888/Template+YYYY-MM-DD+Incident+Title'
 #    - Checklist: 'resources/checklist.md'  # TODO: Add our own checklist?
     - Analysis Questions: 'resources/analysis.md'
     - Examples: 'resources/examples.md'
