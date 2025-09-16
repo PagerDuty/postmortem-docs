@@ -1,13 +1,13 @@
 ---
 cover:
-description: This is a standard template we use for postmortems at PagerDuty. Each section describes the type of information you will want to put in that section.
+description: PagerDutyのポストモーテムで利用されている標準テンプレートです。各セクションにどのような情報を入力するかが説明されています。
 ---
 ![Postmortem Template](../assets/img/headers/Postmortems-Template.png)
 
 
-This is a standard template we use for postmortems at PagerDuty. Each section describes the type of information you will want to put in that section.
+PagerDutyのポストモーテムで利用されている標準テンプレートです。各セクションにどのような情報を入力するかが説明されています。
 
-[Download](../assets/pdf/PostmortemTemplate.pdf) as a PDF to start using with your team.
+PDFとして[ダウンロード](../assets/pdf/PostmortemTemplate.pdf)し、チームで使ってみましょう。
 
 ---
 ![Template](../assets/img/thumbnails/PostmortemTemplate_preview.png)

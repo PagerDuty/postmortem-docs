@@ -1,21 +1,21 @@
 ---
 cover:
-description: A successful postmortem process is based on a culture of honesty, learning, and accountability. Culture change requires management buy-in, but you can lead culture change no matter your role. This guide describes common challenges faced in building a culture of continuous learning through postmortems and strategies for overcoming these challenges.
+description: 成功するポストモーテムプロセスは、誠実さ、学習、そして説明責任の文化に基づいています。文化の変革には経営陣の賛同が必要ですが、あなたの役割に関わらず文化の変革をリードすることができます。このガイドでは、ポストモーテムを通じた継続的学習の文化を構築する際に直面する一般的な課題と、それらを克服するための戦略について説明します。
 ---
 ![Accountability](../assets/img/headers/Postmortems-Accountability.png)
 
-Information sharing and transparency also support an environment that cultivates accountability. A common challenge to effective postmortems is that, after analyzing the incident and creating action items to prevent recurrence, information sharing to increase transparency is never done.
+情報共有と透明性は、説明責任（accountability）を育む環境をサポートします。ポストモーテムの効果を低減させるよくある課題として、インシデントを分析し再発を防ぐためのアクションアイテムを作成した後、透明性を高めるための情報共有が行われないことがあります。
 
-Start by setting a policy for when postmortem action items should be completed. At PagerDuty, high-priority action items needed to prevent a Sev-1 incident from recurring should be completed within 15 days after an incident. Action items from a Sev-2 incident should be addressed within 30 days. Communicate this expectation to all of engineering and make sure it is documented for future reference.
+まず、ポストモーテムのアクションアイテムがいつ完了すべきかのポリシーを設定します。PagerDutyでは、Sev-1インシデントの再発を防ぐのに必要な高優先度のアクションアイテムは、インシデント後15日以内に完了する必要があります。Sev-2インシデントからのアクションアイテムは30日以内に対処する必要があります。この期待値をエンジニアリング組織全体に伝え、将来的にも参照できるよう文書化してください。
 
-For action items to get done, they must have clear owners. Because we are an Agile and DevOps shop, the cross-functional teams responsible for the affected service are also responsible for implementing improvements expected to reduce the likelihood of failure. Engineering leadership helps clarify what parts of the system each team owns and sets expectations for which teams own new development and operational improvements. Ownership designations are communicated across the organization so all teams understand who owns what and ownership gaps can be identified. **As always, document this information for future reference and new hires.** Any uncertainty about ownership of an incident's action items are discussed in the postmortem meeting with representatives for all teams that may own the action item.
+アクションアイテムが実行されるためには、明確なオーナーが必要です。私たちはアジャイルとDevOpsの組織であるため、影響を受けたサービスを担当する横断チームも、障害の可能性を減らすと見込まれる改善の実装を担当します。エンジニアリングのリーダー陣は、各チームがシステムのどの部分を所有しているかを明確にし、新規開発と運用改善を担当するチームに対する期待値を設定します。オーナーシップの指定は組織全体に伝えられ、誰が何を所有しているのかをすべてのチームが理解し、オーナーシップの認識にギャップがあれば特定できるようにします。**例によって、新たにチームに加わるメンバーのために、将来的にも参照できるようこの情報を文書化してください。**インシデントのアクションアイテムのオーナーシップに不確実なところがあれば、ポストモーテムミーティングにおいて、アクションアイテムを所有する可能性のあるすべてのチームの代表者との間で議論します。
 
-We have also seen improved accountability for completing action items by involving the leaders responsible (product managers and engineering managers) for prioritizing a team's work in the postmortem meeting. Product managers are responsible for defining a good customer experience. Incidents cause a poor customer experience. Engage product managers in postmortem discussions by explaining that it will provide a wider picture of threats to customer experience and ideas on how to improve that experience. Doing so gives engineering a chance to explain the importance of these action items so that product managers will prioritize the work accordingly. Similarly, getting engineering leadership more involved in postmortem discussions gives them a better understanding of system weaknesses to inform how and where they should invest technical resources. Sharing this context with the leaders that prioritize work allows them to support the team's effort to quickly complete high-priority action items from incident analysis.
+また、チームの作業の優先順位付けを担当するリーダー（プロダクトマネージャーとエンジニアリングマネージャー）をポストモーテムミーティングに参加させることで、アクションアイテムの完了に対する説明責任が向上します。プロダクトマネージャーには、よい顧客体験を定義する責任があります。インシデントは顧客体験を悪化させます。ポストモーテムの議論にプロダクトマネージャーに参加してもらい、顧客体験に対する脅威とその体験を改善する方法についてより広い視点を提供してもらいます。これによって、エンジニアリングはこれらのアクションアイテムの重要性を説明し、プロダクトマネージャーがそれに応じて作業の優先順位を付けることができます。同様に、より多くのエンジニアリングのリーダー陣をポストモーテムの議論に参加させることで、技術リソースをどこへどのように投資すべきかの判断につながるような、システムの弱点に関する理解を深めることができます。この文脈を作業の優先順位付けを行うリーダーと共有することで、インシデント分析から発生した高優先度のアクションアイテムを迅速に完了できるよう、チームの取り組みを支援できます。
 
-Finally, ensure postmortem action items are discoverable and regularly viewed. Document postmortem action items as you would any other task. The list of action items from an incident analysis should not only live in your postmortem document. Open tickets in your task management tool, within the project of the team that will own the action item, so it can be viewed alongside all other planned work. We label all tickets with the severity level (Sev-1, Sev-2, etc.) and a date tag (YYYYMMDD) so we can easily query tickets that came from specific incidents and build reporting for the number of open tickets from major incidents.
+最後に、ポストモーテムのアクションアイテムを見つけやすく、定期的に確認できるようにしておきます。ポストモーテムのアクションアイテムを他のタスクと同様に文書化しましょう。インシデント分析から発生したアクションアイテムのリストは、ポストモーテムの文書にのみ記載しておくだけでは十分ではありません。タスク管理ツールでチケットをオープンし、アクションアイテムを所有するチームのプロジェクト内に配置して、他にも計画されたすべての作業と一緒に表示できるようにします。すべてのチケットに重大度レベル（Sev-1、Sev-2など）と日付タグ（YYYYMMDD）を付けて、特定のインシデントからのチケットを容易に照会し、重大なインシデント起点でオープンしているチケットの数のレポートを作成できるようにします。
 
-!!! info "Key Takeaways"
-    - Set a policy for postmortem action items: e.g. 15 days for Sev-1 action items, 30 days for Sev-2 action items.
-    - Clarify ownership of postmortem action items.
-    - Engage the leaders that prioritize work.
-    - Open tickets for postmortem action items in your work management ticketing system.
+!!! info "重要なポイント"
+    - ポストモーテムのアクションアイテムのポリシーを設定すること：例えば、Sev-1アクションアイテムは15日以内、Sev-2アクションアイテムは30日以内。
+    - ポストモーテムのアクションアイテムのオーナーシップを明確にすること。
+    - 作業の優先順位付けを行うリーダーを参加させること。
+    - ポストモーテムのアクションアイテムのチケットを、タスク管理システムでオープンすること。

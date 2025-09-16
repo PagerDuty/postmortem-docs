@@ -1,42 +1,42 @@
 ---
 cover:
-description: The basics of Postmortems. Why postmortems are important, when they should be done, and who is responsible for the postmortem.
+description: ポストモーテムの基本。ポストモーテムが重要な理由、いつ実施すべきか、そして誰がポストモーテムの責任者かについて。
 ---
 ![What is a Postmortem?](assets/img/headers/Postmortems-WhatIs.png)
 
-> What went wrong and how do we learn from it?
+> 何が間違っていたのか、そしてそこから何を学ぶのか？
 
-A postmortem (or post-mortem) is a process intended to help you learn from past incidents. It typically involves a blame-free analysis and discussion soon after an event has taken place. An artifact is produced that includes a detailed description of exactly what went wrong in order to cause the incident, along with a list of steps to take in order to prevent a similar incident from occurring again in the future. An analysis of how effective your incident response process itself was during the incident should also be included in the discussion. The value of postmortems comes from helping institutionalize a culture of continuous improvement.
+ポストモーテム（または post-mortem）は、過去のインシデントから学ぶことを目的としたプロセスです。通常、インシデント発生後すぐに非難のない分析とディスカッションを行います。インシデントの原因となった具体的な問題点の詳細な説明と、将来同様のインシデントが発生するのを防ぐための手順リストを含む成果物が作成されます。インシデント対応プロセス自体がインシデント中にどれだけ効果的だったかの分析も議論に含めるべきです。ポストモーテムの価値は、継続的改善の文化を制度化するのに役立つことにあります。
 
-Organizations may refer to the postmortem process in slightly different terms:
+組織によっては、ポストモーテムプロセスを少し異なる用語で呼ぶことがあります：
 
-- Learning Review
-- After-Action Review
-- Incident Review
-- Incident Report
-- Post-Incident Review
-- Root Cause Analysis (or RCA)
+- ラーニングレビュー
+- アフターアクションレビュー
+- インシデントレビュー
+- インシデントレポート
+- ポストインシデントレビュー
+- 根本原因分析（RCA）
 
-## Why Do Postmortems
-During incident response, the team is 100% focused on restoring service. They cannot (and should not) be wasting time and mental energy thinking about how to do something optimally or performing a deep dive on what caused the incident. That's why postmortems are essential—they provide an opportunity to reflect once the issue is no longer impacting users. **The postmortem process drives focus, instills a culture of learning, and identifies opportunities for improvement that otherwise would be lost.**
+## なぜポストモーテムを行うのか
+インシデント対応中、チームは100％サービスの復旧に集中しています。最適な方法を考えたり、インシデントの原因を深く掘り下げたりするために時間と精神的エネルギーを無駄にすることはできません（そうすべきでもありません）。そのためポストモーテムは不可欠で、ユーザーに影響する問題が解消された後に振り返りの機会を提供します。**ポストモーテムプロセスは焦点を絞り、学習の文化を醸成し、そうでなければ失われてしまう改善の機会を特定します。**
 
-Without a postmortem, you fail to recognize what you're doing right, where you could improve, and, most importantly, how to avoid making the same mistakes in the future. Conducting an effective postmortem allows you to learn quickly from your mistakes and improve your systems and processes. A well-designed, blameless postmortem allows teams to continuously learn, serving as a way to iteratively improve your infrastructure and incident response process. Be sure to write detailed and accurate postmortems in order to get the most benefit out of them.
+ポストモーテムを行わなければ、何がうまくいっているのか、どこを改善できるのか、そして最も重要なことに、将来同じ誤りを避ける方法を認識できません。効果的なポストモーテムを実施すれば、ミスから迅速に学び、システムとプロセスを改善することができます。適切に設計されたブレームレス（非難のない）なポストモーテムは、チームが継続的に学習し、インフラストラクチャとインシデント対応プロセスを段階的に改善する方法として機能します。ポストモーテムから最大限の利益を得るためには、詳細で正確なポストモーテムを作成するようにしましょう。
 
-## When to Do a Postmortem
-**Do a postmortem for every major incident** (Sev-2/1). This includes **any time incident response is triggered**—even if it is later discovered that severity was actually lower, it was a false alarm, or it quickly recovered without intervention. A postmortem should not be neglected in these cases because it is still an opportunity to review what did and did not work well in the incident response process. If the incident should not have triggered incident response, it is worthwhile understanding why it did so monitoring can be tuned to avoid unnecessarily triggering incident response in the future. Doing this analysis and follow-up action will help prevent alert fatigue going forward.
+## いつポストモーテムを行うべきか
+**すべての重大なインシデント（Sev-2/1）に対してポストモーテムを実施してください**。これには**インシデント対応が発動されたすべての場合**が含まれます。後に重大度が実際には低かったことが判明した場合や、誤報だった場合、または介入なしで迅速に回復した場合であっても実施します。これらのケースでもポストモーテムを怠るべきではありません。なぜなら、インシデント対応プロセスで何がうまくいき、何がうまくいかなかったかを確認する機会だからです。インシデントがインシデント対応を発動すべきでなかった場合、なぜ発動されたのかを理解し、将来、不必要にインシデント対応を発動しないようにモニタリングを調整することが価値があります。この分析とフォローアップアクションを行うことで、今後のアラート疲れを防ぐのに役立ちます。
 
-Postmortems are done shortly after the incident is resolved, while the context is still fresh for all responders. Just as resolving a major incident becomes top priority when it occurs, completing the postmortem is prioritized over planned work. Completing the postmortem is the final step of your incident response process. Delaying the postmortem delays key learning that will prevent the incident from recurring.
+ポストモーテムはインシデントが解決された直後、すべての対応者にとってコンテキストの記憶が鮮明なうちに行われます。重大なインシデントが発生した時にその解決が最優先事項になるのと同様に、ポストモーテムの完了は計画された作業よりも優先されます。ポストモーテムの完了はインシデント対応プロセスの最終ステップです。ポストモーテムを遅らせると、インシデントの再発を防ぐための重要な学習が遅れます。
 
-**PagerDuty's internal policy for completing postmortems is 3 calendar days for a Sev-1 and 5 business days for a Sev-2.** Because scheduling a time when everyone is available can be difficult, the expectation is people will adjust their calendars to attend the postmortem meeting within this timeframe.
+**PagerDutyの社内ポリシーでは、Sev-1の場合は3暦日以内、Sev-2の場合は5営業日以内にポストモーテムを完了することになっています。** 全員が参加できる時間を調整するのが難しい場合があるため、この期間内にポストモーテムミーティングに参加できるよう予定を調整することが期待されています。
 
-## Who Is Responsible for the Postmortem
-At the end of a major incident call, or very shortly after, the [Incident Commander](https://response.pagerduty.com/training/incident_commander/) selects and directly notifies one responder to own the postmortem. Note that the postmortem owner is not solely responsible for completing the postmortem themselves. **Writing a postmortem is a collaborative effort** and should include everyone involved in the incident response. While engineering will lead the analysis, the postmortem process should involve management, customer support, and business communications teams. The postmortem owner coordinates with everyone who needs to be involved to ensure it is completed in a timely manner.
+## 誰がポストモーテムの責任者か
+重大なインシデントコールの終了時、またはその直後に、[インシデントコマンダー](https://response.pagerduty.co.jp/training/incident_commander/)は一人の対応者を選び、ポストモーテムを担当するよう直接通知します。ポストモーテムの担当者が単独でポストモーテムを完了する責任を負うわけではないことに注意してください。**ポストモーテムの作成は共同作業であり**、インシデント対応に関わった全員を含めるべきです。エンジニアリングが分析をリードする一方で、ポストモーテムプロセスには経営陣、カスタマーサポート、ビジネスコミュニケーションチームも関与します。ポストモーテムの担当者は、タイムリーに完了するために関与する必要のあるすべての人と調整します。
 
-It is important to designate a single owner to avoid the bystander effect. If you ask all responders or a team to do the postmortem, you risk everyone assuming someone else is doing it, and therefore, no one does. When selecting an owner you may choose a single individual who meets any of the following criteria:
+傍観者効果を避けるために、単一の担当者を指定することが重要です。すべての対応者やチームにポストモーテムを依頼すると、誰もが他の誰かがやっていると思い込み、結果的に誰もやらないリスクがあります。担当者を選ぶ際には、以下の基準のいずれかを満たす個人を選ぶことができます：
 
-- Took a leadership role investigating during the incident
-- Performed a task that led to stabilizing the service
-- Was the primary on-call responder for the most heavily affected service
-- Manually triggered the incident to initiate incident response
+- インシデント中の調査でリーダーシップの役割を担った
+- サービスの安定化につながるタスクを実行した
+- 最も影響を受けたサービスのオンコール対応者だった
+- インシデント対応を開始するためにインシデントを手動で発動した
 
-Doing the postmortem is not a punishment, and the owner is not the person that "caused" the incident. Effective postmortems are blameless. In complex systems there is never a single cause, but a combination of factors that lead to failure. The owner is simply an accountable individual who performs select administrative tasks, follows up for information, and drives the postmortem to completion. Writing the postmortem will ultimately be a collaborative effort, but selecting a single owner to orchestrate this collaboration helps ensure it is done.
+ポストモーテムの実施は罰ではなく、担当者はインシデントを「引き起こした」人ではありません。効果的なポストモーテムは非難のない、ブレームレスなものです。複雑なシステムでは、単一の原因はなく、失敗につながる要因の組み合わせがあります。担当者は単に、特定の管理タスクを実行し、情報を追跡し、ポストモーテムを完了に導く責任のある個人です。ポストモーテムの作成は最終的には共同作業になりますが、この共同作業を調整する単一の担当者を選ぶことで、確実に実施されるようになります。

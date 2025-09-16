@@ -1,63 +1,63 @@
 ---
 cover:
-description: Now that you have learned how to create a postmortem, let's take a look at how to create one in the PagerDuty application.
+description: ポストモーテムの作成方法を学んだところで、PagerDutyアプリケーションでポストモーテムを作成する方法を見てみましょう。
 ---
 ![Next Steps](assets/img/headers/Postmortems-NextSteps.png)
-## Create a Report in PagerDuty
+## PagerDutyでレポートを作成する
 
-If you are using PagerDuty for incident management, we strongly encourage you to take advantage of our postmortems feature. This allows you to associate incidents and other data within PagerDuty with your report, which will help with timeline generation and allow you to write a more comprehensive report. Note that only non-stakeholders can create, modify, and/or delete postmortems. (For a matrix of user permissions, please see our [support page](https://support.pagerduty.com/docs/user-roles) and refer to the postmortems line items.)
-### Create the Report
+インシデント管理にPagerDutyを使用している場合は、ポストモーテム機能を活用することを強くお勧めします。これにより、PagerDuty内のインシデントやその他のデータをレポートに関連付けることができ、タイムラインの生成に役立ち、より包括的なレポートを作成することができます。Stakeholder以外のロールの方のみがポストモーテムの作成、変更、および/または削除を行えることに注意してください。（ユーザー権限のマトリックスについては、[サポートページ](https://support.pagerduty.com/main/lang-ja/docs/user-roles)を参照し、ポストモーテム（Postmortem）の項目を確認してください。）
+### レポートを作成する
 
-To create a postmortem from an incident, you can select the (resolved) incident and click the New Postmortem Report button:
+インシデントからポストモーテムを作成するには、（解決済みの）インシデントを選択し、「New Postmortem Report」ボタンをクリックします：
 
 ![Create a New Report Option 1](assets/img/thumbnails/NextSteps/1NewPostmortemReport.png)
 
-Alternatively, you can create a postmortem from the catalog, by either going to Incidents -> Postmortems or directly to `yoursubdomain.pagerduty.com/postmortems`. From there, you click New Report:
+または、カタログからポストモーテムを作成することもできます。「Incidents」→「Postmortems」に移動するか、直接`yoursubdomain.pagerduty.com/postmortems`にアクセスします。そこから「New Report」をクリックします：
 
 ![Create a New Report Option 2](assets/img/thumbnails/NextSteps/2NewPostmortemReport.png)
 
-If you're creating a postmortem report from the catalog, you'll need to associate the incident after you start the report. If you include the estimated start and/or end times, the PagerDuty app will limit the possible incidents associated with that report to incidents that happened in that timeframe.
+カタログからポストモーテムレポートを作成する場合は、レポートを開始した後にインシデントを関連付ける必要があります。推定開始時間や終了時間を含めると、PagerDutyアプリはその時間枠内に発生したインシデントに関連するレポートに対象範囲を制限します。
 
 ![Data Sources](assets/img/thumbnails/NextSteps/3PostmortemDataSources.png)
 
 
-Regardless of whether you created a report from an incident or the catalog, you can add additional incidents using the timeframe or incident number for situations where multiple incidents apply to a single report.
+インシデントからレポートを作成したか、カタログから作成したかに関わらず、複数のインシデントが単一のレポートに適用される状況では、時間枠またはインシデント番号を使用して追加のインシデントを追加できます。
 
-The PagerDuty app will create a timeline to appear in the postmortem based on the in-app events:
+PagerDutyアプリは、アプリ内のイベントに基づいてポストモーテムに表示されるタイムラインを作成します：
 
 ![Create Timeline](assets/img/thumbnails/NextSteps/4CreateTimeline.png)
 
-If you have integrated with Slack or another data source, that information will also appear in the Available Data on the left. You can choose which items to add or remove using the arrows in the center.
+Slackやその他のデータソースと統合している場合、その情報も左側の「Available Data（利用可能なデータ）」に表示されます。中央の矢印を使用して、どの項目を追加または削除するかを選択できます。
 
-After you've completed the timeline, you will need to write in the Analysis. This section has several subsections. Some of the default subsections are Overview, What Happened, and Resolution:
+タイムラインを完了した後、分析を記入する必要があります。このセクションにはいくつかのサブセクションがあります。デフォルトのサブセクションには「Overview（概要）」、「What happened（何が起こったか）」、「Resolution（解決）」などがあります：
 
 ![Postmortem Details](assets/img/thumbnails/NextSteps/5PostmortemDetail.png)
 
-Once you have the information you would like in the report, click Save & View Report. This will save the report in the Draft state (the report will also autosave in the Draft state). The states available for the postmortem report are: Draft, In Review, Reviewed, and Closed. You can edit the status by clicking on the report from the Postmortem Catalog and using the Status drop down menu, which is located at the top of the page:
+レポートに含めたい情報が揃ったら、「Save & View Report」をクリックします。これによりレポートが「Draft（下書き）」状態で保存されます（レポートは「Draft」状態で自動保存されます）。ポストモーテムレポートで利用可能な状態は：Draft（下書き）、In Review（レビュー中）、Reviewed（レビュー済み）、Closed（クローズ）です。ポストモーテムカタログからレポートをクリックし、ページ上部にあるステータスドロップダウンメニューを使用して、ステータスを編集できます：
 
 ![Change Postmortem Status](assets/img/thumbnails/NextSteps/6ChangePostmortemStatus.png)
 
-## Addenda
-### External Access
-You can export your postmortem report to a PDF at any stage. This is primarily used if there are reviewers not in the PagerDuty app or if there is a different, centralized tool for the company for others to view the final report. To save as a PDF, simply select the report from the Postmortem Catalog and click the Save as PDF button:
+## 補足
+### 外部アクセス
+ポストモーテムレポートはどの段階でもPDFにエクスポートできます。これは主に、PagerDutyアプリにいないレビュアーがいる場合や、他の人が最終レポートを閲覧するための会社の一元化されたツールがある場合に使用されます。PDFとして保存するには、ポストモーテムカタログからレポートを選択し、「Save as PDF」ボタンをクリックするだけです：
 
 ![Export Postmortem to PDF](assets/img/thumbnails/NextSteps/7ExportPostmortemPDF.png)
 
-### Customizations
-We strongly recommend that you modify the default report template to fit your company's needs. This can involve adding or removing sections, changing wording to match common language, or modifying the clarifying text in each section so that it communicates what is needed.
+### カスタマイズ
+デフォルトのレポートテンプレートを会社のニーズに合わせて変更することを強くお勧めします。これには、セクションの追加や削除、共通言語に合わせた文言の変更、または各セクションの説明テキストを必要なことを伝えるように変更することが含まれます。
 
-If you would like to add, edit, or remove sections you can do so under Settings in the Postmortem Catalog:
+セクションを追加、編集、または削除したい場合は、ポストモーテムカタログの設定で行うことができます：
 
 ![Edit the Postmortem Template](assets/img/thumbnails/NextSteps/8EditPostmortemTemplate.png)
 
-You can Edit sections by clicking on the gear for the appropriate section. You can also click Add Section at the bottom of the template to add a completely new section:
+適切なセクションのギアをクリックしてセクションを編集できます。また、テンプレートの下部にある「Add Section」をクリックして、まったく新しいセクションを追加することもできます：
 
 ![Edit Postmortem Section Text Areas](assets/img/thumbnails/NextSteps/9EditPostmortemSections.png)
 
-Changes will only apply to postmortem reports moving forward—they will not apply to reports that have already been created.
-For some guidance for what questions and clarifying information to put on your questions, take a look at the [Analysis Questions section](https://postmortems.pagerduty.com/resources/analysis/) under the Resources for this guide.
+変更は今後のポストモーテムレポートにのみ適用されます。既に作成されたレポートには適用されません。
+質問や説明情報をどのように設定するかのガイダンスについては、このガイドの[分析の質問](https://postmortems.pagerduty.co.jp/resources/analysis/)セクションを参照してください。
 
-If at any point you'd like to start again from the default template, you can reset the template. To revert to the original default sections, click on the Reset Template button at the top of your Report Template. You will be prompted in a pop-up menu to Reset Template or Cancel.
+いつでもデフォルトのテンプレートから再開したい場合は、テンプレートをリセットできます。元のデフォルトセクションに戻すには、レポートテンプレートの上部にある「Reset Template」ボタンをクリックします。ポップアップメニューでテンプレートをリセットするか、キャンセルするかの選択が促されます。
 
-### Navigating Between Reports and Associated Incidents
-Currently, the only way to see an incident associated with a report is to open the report and look at the incidents that have been added to it. You cannot currently view a report by navigating to an incident to see an associated report.
+### レポートと関連インシデント間のナビゲーション
+現在、レポートに関連付けられたインシデントを確認する唯一の方法は、レポートを開いて追加されたインシデントを確認することです。現在、インシデントに移動して関連するレポートを表示することはできません。

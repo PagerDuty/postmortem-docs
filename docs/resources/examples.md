@@ -1,11 +1,10 @@
 ---
 cover:
-description: Examples of postmortems.
+description: ポストモーテムの参考例です。
 ---
 ![Postmortem Examples](../assets/img/headers/Postmortems-Examples.png)
 
-
-Here are some examples of postmortems from other companies as a reference,
+以下は、他社で実施されているポストモーテムの参考例です：
 
 * [Stripe](https://support.stripe.com/questions/outage-postmortem-2015-10-08-utc)
 * [LastPass](https://blog.lastpass.com/2015/06/lastpass-security-notice.html/comment-page-2/)

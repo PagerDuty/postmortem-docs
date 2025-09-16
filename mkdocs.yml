@@ -2,10 +2,10 @@
 site_name: PagerDuty Postmortem Documentation
 site_description: A collection of information about the PagerDuty postmortem process and industry best practices. This guide will teach you how to build a culture of continuous learning, the most important components to include in your analysis, and how to conduct effective postmortem meetings.
 site_author: PagerDuty, Inc.
-site_url: https://postmortems.pagerduty.com/
+site_url: https://www.pagerduty.co.jp/ops-guides/postmortems/
 
 # Repository
-repo_url: https://github.com/pagerduty/postmortem-docs
+repo_url: https://github.com/pagerduty/postmortem-docs-ja
 
 # Copyright
 copyright: 'Copyright &copy; PagerDuty, Inc.'

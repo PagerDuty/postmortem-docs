@@ -1,140 +1,139 @@
 ---
 cover:
-description: After you have completed the written postmortem, follow up with a meeting to discuss the incident. The purpose of this meeting is to deepen the postmortem analysis through direct communication and to get buy-in for action items.
+description: 文書化されたポストモーテムを完了した後、インシデントについて議論するためのミーティングを行います。このミーティングの目的は、直接的なコミュニケーションを通じてポストモーテム分析を深め、アクションアイテムへの賛同を得ることです。
 ---
 ![The Postmortem Meeting](assets/img/headers/Postmortems-Meeting.png)
 
-## Purpose
-After you have completed the written postmortem, follow up with a meeting to discuss the incident. **The purpose of this meeting is to deepen the postmortem analysis through direct communication and to get buy-in for action items.** The asynchronous production of the written postmortem helps the team start learning from the incident, but having a conversation leads to deeper learning. Furthermore, having a meeting scheduled to discuss the written postmortem creates [accountability](culture/accountability.md) for the postmortem to be completed in a timely manner. Using this time to discuss action items also helps ensure that those tasks will be completed.
+## 目的
+文書化されたポストモーテムを完了した後、インシデントについて議論するためのミーティングを行います。**このミーティングの目的は、直接的なコミュニケーションを通じてポストモーテム分析を深め、アクションアイテムへの賛同を得ることです。** 文書化されたポストモーテムの非同期的な作成はチームがインシデントから学び始めるのに役立ちますが、会話を持つことでより深い学びにつながります。さらに、文書化されたポストモーテムについて議論するためのミーティングをスケジュールすることで、ポストモーテムをタイムリーに完了するための[説明責任（accountability）](culture/accountability.md)が生まれます。このミーティングでアクションアイテムについて議論することで、それらのタスクが確実に完了するよう支援します。
 
-An anti-pattern for the postmortem meeting is to be overly focused on the immediate concerns documented in the written postmortem. Avoid filling the meeting time by simply reading through each section of the document. The best use of this time is to take a step back from the detailed analysis to better understand the systemic factors that led to the incident.
+ポストモーテムミーティングのアンチパターンは、文書化されたポストモーテムに記載された直接的な懸念事項に過度に焦点を当てることです。ドキュメントの各セクションを単に読み上げることにミーティング時間を使うのは避けてください。この時間を最も有効に使う方法は、詳細な分析から一歩引いて、インシデントにつながったシステム的要因をより良く理解することです。
 
-Some teams make use of the [Retrospective Prime Directive](http://retrospectivewiki.org/index.php?title=The_Prime_Directive) to set the tone for the meeting and serve as a regular reminder of the goals. It can be a helpful tool to anchor the discussion and provide a clean slate to start a retrospective, postmortem, or post-incident review.
+一部のチームは、ミーティングの基調を設定し、目的を定期的に思い起こすために[レトロスペクティブ・プライム・ディレクティブ](http://retrospectivewiki.org/index.php?title=The_Prime_Directive)を活用しています。これは、レトロスペクティブ、ポストモーテム、またはポストインシデントレビューを始めるための白紙の状態を提供し、議論の基盤となる役立つツールとなります。
 
 >
-  "Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand."
-  --Norm Kerth, Project Retrospectives: A Handbook for Team Review
+  「私たちが何を発見しようとも、その時点で知っていたこと、スキルと能力、利用可能なリソース、そして直面していた状況を考慮すれば、誰もが最善を尽くしたと理解して信じています。」
+  --Norm Kerth著「Project Retrospectives: A Handbook for Team Review」
 
 
-**The most important outcome of the postmortem meeting is buy-in for the action plan.** This is an opportunity to discuss proposed [action items](how_to_write/writing.md), brainstorm other options, and gain consensus among team leadership. Sometimes the ROI of proposed action items is not great enough to justify the work or postmortem action items must be delayed for other priorities. The postmortem meeting is a time to discuss these difficult decisions and make clear what work will and will not be done, as well as the expected implications of those choices.
+**ポストモーテムミーティングの最も重要な成果は、アクションプランへの賛同です。** これは提案された[アクションアイテム](how_to_write/writing.md)について議論し、他の選択肢についてブレインストーミングし、チームリーダーシップ間でコンセンサスを得る機会です。ときには、提案されたアクションアイテムの投資対効果が作業を正当化するほど大きくない場合や、他の優先事項をポストモーテムのアクションアイテムに比べて遅らせなければならない場合もあります。ポストモーテムミーティングは、これらの難しい決断について議論し、どの作業を行い、どの作業を行わないのか、そしてそれらの選択によって予想される影響を明確にする時間です。
 
-Whereas the written postmortem is intended to be shared widely in the organization, the primary audience for the postmortem meeting is the teams directly involved with the incident. This meeting gives the team a chance to align on what happened, what to do about it, and how they will communicate about the incident to internal and external stakeholders.
+文書化されたポストモーテムは組織内で広く共有されることを意図していますが、ポストモーテムミーティングの主な対象者はインシデントに直接関わったチームです。このミーティングは、チームが何が起こったのか、それについて何をすべきか、そしてインシデントについて内部および外部のステークホルダーにどのように伝えるかについて認識を合わせる機会を提供します。
 
 !!! tip
-    Send a link to the postmortem document to meeting attendees 24 hours before the meeting. Though the postmortem does not need to be complete when it is sent to the attendees, it should be finished before the postmortem meeting. It is still worth sending an incomplete postmortem to meeting attendees in advance so they can start reading through the document.
+    ミーティングの24時間前にポストモーテムドキュメントのリンクを参加者に送信してください。ポストモーテムは参加者に送信される時点で完成している必要はありませんが、ポストモーテムミーティングの開催までに完成させましょう。参加者が文書を読み始められるように、不完全なポストモーテムでも事前に共有しておく価値があります。
 
-    This will help you avoid wasting time in the meeting simply reading through the document. Remember the purpose of the meeting is to have an in-depth conversation about what caused the incident and how to prevent it in the future, not to review the document. The postmortem meeting is also an opportunity to clarify any questions about what happened and what the team plans to do to prevent it from happening again. Encourage attendees to ask any and all questions to help everyone get on the same page
-    and help the team consider new perspectives for their analysis.
+    これにより、ミーティングで単に文書を読み上げるために時間を無駄にすることを避けられます。ミーティングの目的は、インシデントの原因と将来それを防ぐ方法について深い会話をすることであり、文書をレビューすることではないことを覚えておいてください。ポストモーテムミーティングは、何が起こったのか、そしてそれが再び起こるのを防ぐためにチームで何をするかに関する疑問点を明らかにする機会でもあります。全員が同じ認識を持てるよう、参加者にあらゆる質問を促し、分析を進める上でチームが新しい視点から考えられるようにしましょう。
 
-## Agenda
-Here is a sample agenda for the meeting:
+## アジェンダ
+ミーティングのサンプルアジェンダは以下の通りです：
 
-1. **Postmortem owner** summarizes incident causes and timeline. **Facilitator** leads discussion:
-    - What were the larger cultural and structural factors that lead to the incident? **How did we get here?**
-1. **Postmortem owner** summarizes proposed follow-up action items. **Facilitator** leads discussion:
-    - Is the team **confident** this plan will reduce the likelihood of this incident recurring?
-    - **What more or different work might be needed?**
-    - Will team leadership (Engineering Manager, Product Manager, Tech Lead, etc.) **commit** to prioritizing these action items?
-1. **Customer liaison** summarizes customer impact.
-    - Provide any new context about customer reaction to the incident.
-    - Review and approve external communication drafted in the postmortem.
+1. **ポストモーテム担当者**がインシデントの原因とタイムラインを要約します。**ファシリテーター**が議論をリードします：
+    - インシデントにつながったより大きな文化的・構造的要因は何でしたか？**どのようにしてここに至ったのでしょうか？**
+1. **ポストモーテム担当者**が提案されたフォローアップアクションアイテムを要約します。**ファシリテーター**が議論をリードします：
+    - この計画がインシデントの再発の可能性を減らすことに、チームは**自信**を持てますか？
+    - **どのような追加または異なる作業が必要な可能性がありますか？**
+    - チームリーダーシップ（エンジニアリングマネージャー、プロダクトマネージャー、テックリードなど）はこれらのアクションアイテムを優先することを**約束**しますか？
+1. **カスタマーリエゾン**が顧客への影響を要約します。
+    - インシデントに対する顧客の反応について、新たなコンテキストを提供します。
+    - ポストモーテムで起草された外部コミュニケーション内容をレビューし、承認します。
 
-## Who Participates
-The postmortem owner invites the following people to the postmortem meeting. Below is more detail about the role each plays in the discussion.
+## 参加者
+ポストモーテム担当者は、ポストモーテムミーティングに以下の人々を招待します。以下は、各自が議論で果たす役割についての詳細です。
 
-- Always
-    - The [incident commander](https://response.pagerduty.com/training/incident_commander/).
-        - The incident commander is responsible for coordinating the response. During the postmortem meeting the incident commander can provide valuable feedback on the incident response effort and process improvements.
-    - The incident commander shadowee (if there was one).
-        - This person may have served as the [scribe](https://response.pagerduty.com/training/scribe/) or [deputy](https://response.pagerduty.com/training/deputy/). The deputy incident commander is responsible for adding necessary responders to the call and updating internal stakeholders outside of the incident response call. The deputy can provide valuable feedback on the response effort and the ease or difficulty of communicating with additional responders and stakeholders during incident response.
-    - [Service owners](https://response.pagerduty.com/training/subject_matter_expert/) and other key engineers involved in the incident.
-        - On-call service owners and other engineers that responded to the incident are the experts of the affected services. During the postmortem meeting they can provide historical context about how the systems were built, cultural context about what was happening with the team leading up the incident, and proposals for what work would reduce the likelihood of this incident recurring.
-        - Productive postmortem discussions will include engineers with in-depth knowledge of the part of the system that their team owns. If the engineer(s) that responded to the incident are newer to the team, it will be helpful to include more experienced engineers from their team in the postmortem meeting.
-    - Engineering manager for impacted systems.
-        - The manager responsible for the teams that responded to the incident attends the postmortem meeting to inform their staffing and technical investment decisions
-    - Product manager for impacted systems.
-        - Product managers attend postmortem meetings to understand the effect incidents have on their customers' experience. For postmortem action items to be prioritized and completed, it is critical to engage product managers in this discussion of the importance and scope of proposed follow-up tasks.
-- Optional (Only Sev-1 incidents)
-    - [Customer liaison](https://response.pagerduty.com/training/customer_liaison/).
-        - The customer liaison can speak to customers' reactions to the incident. They need to understand the team's decision on action items so they can finalize and send external messaging.
+- 必須参加
+    - [インシデントコマンダー](https://response.pagetduty.co.jp/training/incident_commander/)。
+        - インシデントコマンダーは対応の調整を担当します。ポストモーテムミーティングでは、インシデントコマンダーはインシデント対応の取り組みとプロセス改善について貴重なフィードバックを提供できます。
+    - インシデントコマンダーのシャドーイングをしていた人（いた場合）。
+        - この人は[書記官](https://response.pagetduty.co.jp/training/scribe/)または[副指揮官](https://response.pagetduty.co.jp/training/deputy/)を務めた可能性があります。副指揮官は、必要な対応者をコールに追加し、インシデント対応コール外の内部ステークホルダーを更新する責任があります。副指揮官は対応の取り組みと、インシデント対応中に追加された対応者やステークホルダーとのコミュニケーションに関し、やりやすかった面や難しかった面について貴重なフィードバックを提供できます。
+    - インシデントに関わった[サービスオーナー](https://response.pagetduty.co.jp/training/subject_matter_expert/)と他の主要なエンジニア。
+        - オンコールのサービスオーナーとインシデントに対応した他のエンジニアは、影響を受けたサービスの専門家です。ポストモーテムミーティングでは、システムがどのように構築されたかについての歴史的コンテキスト、インシデントに至るまでのチームで起きていたことについての文化的コンテキスト、そしてこのインシデントの再発の可能性を減らすためにどのような作業が必要かについての提案を提供できます。
+        - 生産的なポストモーテムの議論には、チームが所有するシステムの部分について深い知識を持つエンジニアが含まれます。インシデントに対応したエンジニアが新しいチームメンバーである場合は、同じチームのより経験豊富なエンジニアにポストモーテムミーティングへ参加してもらうと効果的です。
+    - 影響を受けたシステムのエンジニアリングマネージャー。
+        - インシデントに対応したチームを担当するマネージャーは、スタッフ配置と技術投資の決定に情報を提供するためにポストモーテムミーティングに参加します。
+    - 影響を受けたシステムのプロダクトマネージャー。
+        - プロダクトマネージャーは、インシデントが顧客体験に与える影響を理解するためにポストモーテムミーティングに参加します。ポストモーテムのアクションアイテムを優先し完了するためには、提案されたフォローアップタスクの重要性と範囲についてのこの議論にプロダクトマネージャーを関与させることが重要です。
+- 任意参加（Sev-1インシデントのみ）
+    - [カスタマーリエゾン](https://response.pagetduty.co.jp/training/customer_liaison/)。
+        - カスタマーリエゾンはインシデントに対する顧客の反応について話すことができます。彼らは外部メッセージを最終化して送信できるように、アクションアイテムに関するチームの決定を理解する必要があります。
 
-## Facilitation
-### What Is Facilitation
-The facilitator's role in the postmortem meeting is different from the other participants. The facilitator does not voice their own ideas in the meeting; instead, they encourage the group to speak up and keep the discussion on track. The postmortem owner, the incident commander, or any other meeting attendee that played an active role during the incident are the ones who need to contribute to the discussion and should not also be responsible for facilitating.
+## ファシリテーション
+### ファシリテーションとは
+ポストモーテムミーティングにおけるファシリテーターの役割は、他の参加者とは異なります。ファシリテーターはミーティングで自分のアイデアを表明せず、代わりにグループが発言し、議論を軌道に乗せるよう促します。ポストモーテム担当者、インシデントコマンダー、またはインシデント中に積極的な役割を果たした他のミーティング参加者は、議論に貢献する必要があり、ファシリテーションの責任も負うべきではありません。
 
-The facilitator:
+ファシリテーターが行うこと：
 
-- Encourages people to speak up and makes sure that everyone is heard.
-- Clarifies insights and challenges the team with questions.
-- Helps the team see different perspectives and different options.
-- Keeps everyone on time and on track. Cuts off tangents and stops people from dominating the entire meeting.
-- Speaks as little as possible. Remember to guide the discussion, but do not take over the meeting.
+- 人々が発言するよう促し、全員の声に耳が傾けられるようにします。
+- 洞察を明確にし、チームに質問を投げかけます。
+- チームが異なる視点と異なる選択肢に目を向けられるよう促します。
+- 全員が時間通りに議論を進め、軌道に乗るようにします。話の脱線を防ぎ、特定の人々がミーティング全体を支配するのを止めます。
+- できるだけ少なく話します。議論を導くことを念頭におきながら、ミーティングを乗っ取らないように注意してください。
 
-The facilitator does not:
+ファシリテーターが行わないこと：
 
-- Make decisions.
-- Take sides. If the facilitator takes sides, team members might feel attacked and might stop contributing to the meeting.
-    - Comment on what people say, even if they are trying to give positive feedback. It may make the speaker feel validated, but it might also make the others feel worse about what they have to say or discourage them from contributing something.
+- 決定を下すこと。
+- 誰かの肩を持つこと。ファシリテーターが特定の側につくと、チームメンバーは攻撃されていると感じ、ミーティングへの貢献をやめるかもしれません。
+    - 人々が言うことにコメントするのは、たとえそれが肯定的なフィードバックを与える意図だったとしても避けましょう。話者自身は肯定感を感じるかもしれませんが、他の人からすると自分がこれから言おうとすることについて悪く感じたり、貢献することを思いとどまったりすることにつながるかもしれません。
 
-### Who Should Facilitate
-Good facilitators tend to have a high level of emotional intelligence and can easily read non-verbal cues to understand how people are feeling. They use this sense to cultivate an environment where everyone is comfortable speaking. Agile coaches and project managers are often skilled facilitators. At PagerDuty, we have a guild of confident facilitators who coach individuals interested in learning how to facilitate. When searching for individuals in your organization to help facilitate postmortem meetings, look for people with these core competencies:
+### 誰がファシリテートすべきか
+優れたファシリテーターは通常、高度な感情的知性を持ち、人々がどのように感じているかを理解するために非言語的な手がかりを容易に読み取ることができます。彼らはこの感覚を使って、誰もが話しやすい環境を育みます。アジャイルコーチやプロジェクトマネージャーはしばしば熟練したファシリテーターです。PagerDutyでは、ファシリテーションの学習に興味のある個人をコーチする自信のあるファシリテーターのギルドがあります。組織内でポストモーテムミーティングのファシリテートを手伝う個人を探す際には、これらのコアコンピテンシーを持つ人を探してください：
 
-- Can read non-verbal cues to assess how people are feeling in the room and spot who might have something to say.
-- Can paraphrases what is said to clarify for self and others.
-- Can ask open questions to stimulate deeper thinking.
-- Is comfortable interrupting when discussion gets off track or when someone dominates the discussion.
-- Can redirect conversation to focus on goals.
-- Can keep track of time and give time reminders.
-- Can drive discussion to decision-making and action items.
+- 部屋の中で人々がどのように感じているかを見定め、非言語的な手がかりを読み取って言いたいことがある人を見つけることができる。
+- 自分自身と他の人のため、発言内容が明確になるように言い換えることができる。
+- より深い思考を刺激するために、オープンな質問をすることができる。
+- 議論が脱線したとき、または誰かが議論を支配するときに中断することに慣れている。
+- 会話が目標に向かっていくように方向転換することができる。
+- 時間を追跡し、時間の通知を与えることができる。
+- 議論を導き、意思決定とアクションアイテムへ繋げることができる。
 
-Postmortem meeting facilitators do not need to be experts in the affected systems. Facilitators do not need to be well-versed in the content of the discussion. Remember, the facilitator does not contribute their own opinions to the discussion, but works to get others to speak. The meeting attendees that were involved with the incident response are the experts on the incident, and the facilitator will ask the right questions to encourage those experts to share information with the group.
+ポストモーテムミーティングのファシリテーターは、影響を受けたシステムの専門家である必要はありません。ファシリテーターは議論の内容に精通している必要はありません。ファシリテーターは議論に自分の意見を貢献するのではなく、他の人が話すよう促すことを忘れないでください。インシデント対応に関わったミーティング参加者がインシデントの専門家であり、ファシリテーターはそれらの専門家がグループと情報を共有するよう促す質問をします。
 
-Your facilitator should, however, be familiar with the postmortem process and the goals of the postmortem meeting so they can guide the group discussion to achieve those goals. Postmortem meeting facilitators must have a strong understanding of [blamelessness](culture/blameless.md) so they can help the group avoid blaming speech in the meeting.
+しかし、ファシリテーターはポストモーテムプロセスとポストモーテムミーティングの目標に精通しているべきで、それによりグループ議論をそれらの目標達成に導くことができます。ポストモーテムミーティングのファシリテーターは、[非難のないこと（ブレームレス）](culture/blameless.md)についてしっかりした理解を持っている必要があり、グループがミーティングで非難の言葉を避けられるようにします。
 
-## Facilitation Tips
-The postmortem meeting facilitator helps the team dig deeper into their analysis, [avoid blame](culture/blameless.md), and get buy-in for their action items. Common challenges for the postmortem meeting are being overly focused on the written postmortem and succumbing to the tendency to blame individuals for system failure. Below are tips on how to run effective postmortem meetings and how to handle awkward situations when they arise.
+## ファシリテーションのヒント
+ポストモーテムミーティングのファシリテーターは、チームが分析をより深く掘り下げ、[非難を避け](culture/blameless.md)ながら、アクションアイテムへの賛同を得られるようにします。ポストモーテムミーティングの一般的な課題は、文書化されたポストモーテムに過度に焦点を当てることと、システム障害の責任を個人に帰する傾向に屈することです。以下は、効果的なポストモーテムミーティングを実施する方法と、発生した場合の厄介な状況の対処方法に関するヒントです。
 
-**Housekeeping**
+**準備事項**
 
-- Set ground rules at the beginning of the meeting.
-    - Set the expectation that everyone should speak but no-one should hog the conversation.
-    - Remind the group that we practice blameless postmortems.
-- Establish a safe word for when the conversation gets off track.
-    - If a team member notices the conversation is getting off-topic they can say the safe word and have the team re-evaluate the usefulness of the discussion. At PagerDuty, some teams use the acronym ELMO which stands for "Enough, let's move on." This takes pressure off the facilitator alone to interrupt when discussion gets off-topic.
-- Share the agenda so the team is clear on what is on- and off-topic.
-- Use a timer to timebox.
-    - You can timebox each agenda item. Presenting a timer makes everyone aware of the time limit and reduces the need for the facilitator to interrupt for time.
-- Present the postmortem document from your laptop onto the TV so everyone can see.
+- ミーティングの冒頭でルールを設定します。
+    - 全員が発言すべきだが、誰も会話を独占すべきではないという期待値を設定します。
+    - ブレームレスなポストモーテムを実践していることを、改めてグループに認識してもらいます。
+- 会話が脱線した場合のセーフワードを確立します。
+    - チームメンバーが会話がトピックから外れていることに気づいた場合、セーフワードを言って、チームに議論の有用性を再評価させることができます。PagerDutyでは、一部のチームは「ELMO」という頭字語を使用しています。これは「Enough, let's move on（十分です、次に進みましょう）」を意味します。これにより、議論がトピックから外れたときに中断するプレッシャーをファシリテーターだけが負う必要がなくなります。
+- アジェンダを共有して、チームが何がトピックに含まれ、何が含まれないかを明確にします。
+- タイマーを使用して時間を制限します。
+    - 各アジェンダ項目の時間を制限できます。タイマーを表示することで、全員が時間制限を認識し、ファシリテーターが時間のために中断する必要性が減ります。
+- ポストモーテムドキュメントをあなたのラップトップからTVに表示して、全員が見られるようにします。
 
-[**How to avoid blame:**](culture/blameless.md)
+[**非難を避ける方法：**](culture/blameless.md)
 
-- Remind the team at the start of the meeting and/or when blame occurs during the meeting that we have agreed to practice blameless postmortems and call each other out when blame occurs.
-- Look out for and avoid "who" or "why" questions, which limit analysis and imply blame. Instead ask "what" and "how" questions, such as:
-    - "What did you think was happening?"
-    - "What did you do next?"
-    - "How did that action make sense at the time?"
-- When inquiring about a human action, abstract to an non-specific responder. Remind the team anyone could have made the same mistake.
-    - "What could have led any responder to take that action?"
+- ミーティングの開始時、および/またはミーティング中に非難が発生した場合に、ブレームレスなポストモーテムを実践することに同意していること、そして非難が発生した場合にお互いに指摘することをチームに思い出してもらいます。
+- 分析の可能性を狭め、非難を暗示するような「誰が」または「なぜ」という質問は避けるよう注意してください。代わりに「何を」や「どのように」という質問をします：
+    - 「何が起きていると思いましたか？」
+    - 「次に何をしましたか？」
+    - 「その行動はその時点でどのように理にかなっていましたか？」
+- 人間の行動について尋ねるとき、特定されていない対応者に抽象化します。誰でも同じミスを犯す可能性があることをチームに思い出させます。
+    - 「どのような要因によって対応者がその行動を取る可能性が生じましたか？」
 
-**What to do when the conversation is getting off-topic:**
+**会話がトピックから外れている場合の対処法：**
 
-- The facilitator's job is to keep the team on track and will need to interrupt to remind the team of the meeting goals by asking if it is valuable to continue with a topic or if it can be taken offline.
-    - "Sorry to interrupt, but this topic seems unrelated to the goals of this meeting, do we want to go back to the original topic or continue with this discussion?"
-- Timebox agenda items. Once the time is done they can vote if they want to keep talking for another few minutes.
+- ファシリテーターの仕事はチームを軌道に乗せておくことであり、トピックを続けることが価値があるか、またはオフラインで取り上げることができるかを尋ねることで、ミーティングの目標をチームに思い出してもらい、不適切なトピックを中断する必要があります。
+    - 「申し訳ありませんが、このトピックはこのミーティングの目標と関係ないようです。元のトピックに戻りますか、それともこの議論を続けますか？」
+- アジェンダ項目の時間を制限します。時間が終わったら、さらに数分間話し続けるかどうかの投票を行います。
 
-**What to do when one person is dominating the meeting:**
+**一人がミーティングを支配している場合の対処法：**
 
-- Say upfront that participation from everyone is important. Explain the facilitator's responsibilities so they won't be offended if they are asked to stop talking or speak up. Pay attention to how much people are talking throughout the meeting.
-- "I wasn't able to hear what the first person was saying."
-- Act as a mediator and call out when people are getting interrupted: "Hold that thought – I want to make sure Shari has a chance to finish"
+- 全員の参加が重要であることを最初に言います。ファシリテーターの責任を説明して、話すのをやめるように頼まれたり、発言するように頼まれたりしても気分を害さないようにします。ミーティング全体を通して、人々がどれだけ話しているかに注意を払います。
+- 「最初の人が言っていたことが聞こえませんでした。」
+- 仲介者として行動し、人々が中断されているときに指摘します：「その考えをいったん保留してください – Shariが話を終える機会を確保したいと思います」
 
-**If a team member has not said anything, how do you get them to contribute:**
+**チームメンバーが何も言っていない場合、どのように貢献させるか：**
 
-- "Let's go around the room and hear from everyone"
-- "What's stood out for you so far?"
-- "What else might we need to consider?"
+- 「部屋を一周してみなさん全員から意見を聞きましょう」
+- 「これまでで目立ったことは何ですか？」
+- 「他に考慮すべきことは何がありますか？」
 
-**How to stimulate analysis:**
+**分析を刺激する方法：**
 
-- Ask open questions, no questions that can be answered with "yes" or "no."
-- Reference our [analysis questions](resources/analysis.md). The team may have asked themselves these questions as they were preparing the written postmortem. Asking some of these in the meeting will encourage new, collaborative thinking.
+- オープンな質問をします。「はい」または「いいえ」で答えられる質問はしません。
+- [分析の質問](resources/analysis.md)を参照してください。もしかするとチームでは既に、文書化されたポストモーテムを準備する際にこれらの質問を自問しているかもしれません。ミーティングで改めてこのうちのいくつかの項目を尋ねることで、協調的で新しい思考を促しましょう。

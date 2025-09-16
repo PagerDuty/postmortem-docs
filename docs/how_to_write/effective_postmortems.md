@@ -1,21 +1,21 @@
 ---
 cover:
-description: Here are concrete steps for producing a postmortem document. You will learn the most important information to include in the postmortem, how to collect and present that information, and how to conduct an effective analysis that results in system improvements.
+description: 効果的なポストモーテム文書を作成するための具体的なステップを紹介します。ポストモーテムに含めるべき最も重要な情報、その情報の収集と提示方法、そしてシステム改善につながる効果的な分析の実施方法を学びます。
 ---
 ![Effective Postmortems](../assets/img/headers/Postmortems-Tips.png)
 
-Writing detailed and accurate postmortems allows you to learn quickly from mistakes and improve systems and processes for everyone. This guide lists some of the things we do to make sure our postmortems are effective.
+詳細で正確なポストモーテムを作成することで、ミスから迅速に学び、全員のためにシステムとプロセスを改善することができます。このガイドでは、効果的なポストモーテムを作成するために私たちが行っていることをいくつか紹介します。
 
-## Do
-- Make sure the timeline is an accurate representation of events.
-- Define any technical lingo/acronyms you use that newcomers may not understand.
-- [Separate what happened from how to fix it](https://www.youtube.com/watch?v=TqaFT-0cY7U).
-- Write follow-up tasks that are actionable, specific, and bounded in scope.
-- [Discuss how the incident fits into our understanding of the health and resiliency of the services affected](https://www.pagerduty.com/blog/postmortem-understand-service-reliability/).
+## すべきこと
+- タイムラインに出来事が正確に表現されていることを確認すること。
+- 新しく参加した人が理解できない可能性のある専門用語や略語を定義すること。
+- [何が起きたかと、それをどう修正するかを分けて考えること](https://www.youtube.com/watch?v=TqaFT-0cY7U)。
+- フォローアップタスクは、実行可能で具体的かつ範囲が限定されたものにすること。
+- [インシデントと、影響を受けたサービスの健全性と回復力に関する自分たちの理解を照らし合わせ、どのように合致するかを議論すること](https://www.pagerduty.com/blog/postmortem-understand-service-reliability/)。
 
-## Do Not
-- Use the word "outage" unless it really was an outage. Accurately reflect the impact of an incident. Outage is usually too broad a term to use. It can lead customers to think the product was fully unavailable when that likely was nowhere near the case.
-- Change details or events to make things "look better." Be honest in postmortems, otherwise they lose their effectiveness.
-- Name and shame someone. Keep postmortems blameless. If someone deployed a change that broke things, it's not their fault. Everyone is collectively responsible for building a system that allowed them to deploy a breaking change.
-- Blame "human error." Very rarely is the mistake "rooted" in a human performing an action. There are often several contributing factors (the script the human ran didn't have rate limiting, the documentation was out of date, etc.) that can and should be addressed.
-- Only point out what went wrong. Drill down to the underlying causes of the issue.
+## すべきでないこと
+- 本当に停止していない限り、「停止（outage）」という言葉を使わないようにし、インシデントの影響を正確に反映させること。「停止」は通常、使用するには広すぎる用語です。顧客に製品が完全に利用できなくなったと思わせる可能性がありますが、実際にはそうではないことがほとんどです。
+- 「より良く見せる」ために詳細や出来事を変更しないこと。ポストモーテムでは正直であることが重要で、さもないとその効果が失われます。
+- 特定の人を名指しで非難しないこと。ポストモーテムは非難のないものにしましょう。誰かが問題を引き起こす変更をデプロイした場合、それはその人の責任ではありません。破壊的な変更をデプロイできるシステムを構築したことに対して、全員が共同で責任を負っています。
+- 「ヒューマンエラー」を非難しないこと。ミスが人間の行動に「根ざしている」ことはほとんどありません。多くの場合、いくつかの要因（人間が実行したスクリプトにレートリミットの対応がなかった、ドキュメントが古かった、など）が関係しています。このような事柄には対処することができ、また対処すべきです。
+- 何が間違っていたかだけを指摘しないこと。問題の根本的な原因を掘り下げましょう。

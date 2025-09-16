@@ -1,274 +1,274 @@
 ---
 cover:
-description: Here are concrete steps for producing a postmortem document. You will learn the most important information to include in the postmortem, how to collect and present that information, and how to conduct an effective analysis that results in system improvements.
+description: ポストモーテム文書を作成するための具体的なステップを紹介します。ポストモーテムに含めるべき最も重要な情報、その情報の収集と提示方法、そしてシステム改善につながる効果的な分析の実施方法を学びます。
 ---
 ![Step by Step](../assets/img/headers/Postmortems-StepByStep.png)
 
-Below are the steps involved in performing a postmortem at a high level. Below are the details of how to perform each step.
+以下は、概要レベルでのポストモーテム実施のステップです。各ステップの実施方法の詳細を以下に示します。
 
-1. Create a new postmortem for the incident.
-1. Schedule a postmortem meeting within the required timeframe for all required and optional attendees on the "Incident Postmortem Meetings" shared calendar.
-1. Populate the incident timeline with important changes in status/impact and key actions taken by responders.
-    - For each item in the timeline, include a metric or some third-party page where the data came from.
-1. Analyze the incident.
-    - Identify superficial and root causes.
-    - Consider technology and process.
-1. Open any follow-up action tickets.
-1. Write the external messaging.
-1. Ask for review.
-1. Attend the postmortem meeting.
-1. Share the postmortem.
+1. インシデントの新しいポストモーテムを作成する。
+1. 「インシデントポストモーテムミーティング」共有カレンダーに、必須および任意の参加者のために、必要な時間枠内でポストモーテムミーティングをスケジュールする。
+1. ステータス/影響の重要な変化と、対応者が取った主要なアクションをインシデントタイムラインに記入する。
+    - タイムラインの各項目について、データの出所となるメトリクスまたはサードパーティのページを含める。
+1. インシデントを分析する。
+    - 表面的な原因と根本的な原因を特定する。
+    - 技術とプロセスの両方を考慮する。
+1. フォローアップアクションのチケットを作成する。
+1. 外部向けメッセージを作成する。
+1. レビューを依頼する。
+1. ポストモーテムミーティングに参加する。
+1. ポストモーテムを共有する。
 
-## Owner Responsibilities
-At the end of a major incident call, or very shortly after, the [Incident Commander](https://response.pagerduty.com/training/incident_commander/) selects one responder to own the postmortem. The selected owner will be notified directly by the Incident Commander. Writing the postmortem will ultimately be a collaborative effort, but selecting a single owner will help ensure it gets done.
+## オーナーの責任
+重大なインシデント対応の終了時、またはその直後に、[インシデントコマンダー](https://response.pagerduty.co.jp/training/incident_commander/)は対応者の一人をポストモーテムのオーナーとして選出します。選出されたオーナーはインシデントコマンダーから直接通知を受けます。ポストモーテムの作成は最終的には共同作業となりますが、単一のオーナーを選出することで確実に完了させることができます。
 
-The owner of a postmortem is responsible for the following:
+ポストモーテムのオーナーは以下の責任を負います：
 
-- Scheduling the postmortem meeting on the shared calendar and inviting the relevant people (this should be scheduled within 3 calendar days for a Sev-1 and 5 business days for a Sev-2).
-- Investigating the incident, pulling in whoever is needed from other teams to assist in the investigation.
-- Ensuring the page is updated with all of the necessary content. See our [Template](../resources/post_mortem_template.md) for what should be included.
-- Creating follow-up tickets. (The owner is only responsible for creating the tickets, not following them up to resolution).
-- Reviewing the postmortem content with appropriate parties before the meeting, and running through the topics at the postmortem meeting (the Incident Commander will "run" the meeting and keep the discussion on track, but you will likely be doing most of the talking).
-- Communicating the results of the postmortem internally.
+- 共有カレンダーにポストモーテムミーティングをスケジュールし、関連する人々を招待する（Sev-1の場合は3日以内、Sev-2の場合は5営業日以内にスケジュールする必要があります）。
+- インシデントを調査し、調査に必要な他のチームのメンバーを招集する。
+- ページに必要なすべてのコンテンツが更新されていることを確認する。含めるべき内容については[テンプレート](../resources/post_mortem_template.md)を参照してください。
+- フォローアップチケットを作成する（オーナーはチケットの作成のみ責任を負い、解決までのフォローアップは責任外です）。
+- 会議前に適切な関係者とポストモーテムの内容をレビューし、ポストモーテムミーティングでトピックを進行する（インシデントコマンダーが会議を「運営」し、議論を軌道に乗せますが、あなたが最も多く話すことになるでしょう）。
+- ポストモーテムの結果を社内に伝える。
 
-The owner of a postmortem creates the postmortem document and updates it with all relevant information.
+ポストモーテムのオーナーはポストモーテム文書を作成し、関連するすべての情報を更新します。
 
 
-## Administration
+## 管理
 ![Administration](../assets/img/thumbnails/1Administration.png)
 
-1. Create the document.
-2. Add all responders to it.
-3. Schedule the meeting.
+1. 文書を作成する。
+2. すべての対応者を追加する。
+3. 会議をスケジュールする。
 
-If not already done by the Incident Commander, the postmortem owner's first step is to create a new, empty postmortem for the Incident. Go through the history in Slack to identify the responders and add them to the page so they can help populate the postmortem. Include the Incident Commander and Scribe as well. Add a link to the incident call recording.
+まだインシデントコマンダーが実施していない場合、ポストモーテムオーナーの最初のステップは、インシデントのための新しい空のポストモーテムを作成することです。Slackの履歴を確認して対応者を特定し、彼らにポストモーテムの作成を手伝ってもらえるようにページに追加します。インシデントコマンダーと書記官も足しましょう。インシデント対応のレコーディングへのリンクを追加します。
 
-Next, schedule the postmortem meeting for 30 minutes to an hour, depending on complexity of the incident. Scheduling the meeting at the beginning of the process helps ensure the postmortem is completed within the SLA. **The meeting should be scheduled within 3 calendar days for a Sev-1 and 5 business days for a Sev-2.** Don't worry about finding the best time for all attendees. The priority is to schedule within this timeframe and attendees should adjust their schedules accordingly. At PagerDuty, we schedule all postmortem meetings on a shared "Incident Postmortem Meetings" calendar so they are easily discoverable for any interested parties across the organization.
+次に、インシデントの複雑さに応じて30分から1時間のポストモーテムミーティングをスケジュールします。プロセスの最初に会議をスケジュールすることで、SLA内にポストモーテムが完了することを確保します。**会議はSev-1の場合は3暦日以内、Sev-2の場合は5営業日以内にスケジュールする必要があります。**すべての参加者にとって最適な時間を見つけることを心配する必要はありません。優先事項はこの時間枠内にスケジュールすることであり、参加者はそれに応じてスケジュールを調整する必要があります。PagerDutyでは、すべてのポストモーテムミーティングを「インシデントポストモーテムミーティング」共有カレンダーにスケジュールし、組織全体で関心のある人々が簡単に見つけられるようにしています。
 
-Invite the following people to the postmortem meeting:
+ポストモーテムミーティングには以下の人々を招待します：
 
-- Always
-    - The [incident commander](https://response.pagerduty.com/training/incident_commander/).
-    - The incident commander shadowee (if there was one).
-    - [Service owners](https://response.pagerduty.com/training/subject_matter_expert/) involved in the incident.
-    - Key engineer(s)/responders involved in the incident.
-    - Engineering manager for impacted systems.
-    - Product manager for impacted systems.
-- Optional
-    - [Customer liaison](https://response.pagerduty.com/training/customer_liaison/) (only for Sev-1 incidents).
+- 必須
+    - [インシデントコマンダー](https://response.pagerduty.co.jp/training/incident_commander/)。
+    - インシデントコマンダーをシャドーイングしていた担当者（いた場合）。
+    - インシデントに関与した[サービスオーナー](https://response.pagerduty.co.jp/training/subject_matter_expert/)。
+    - インシデントに関与した主要なエンジニア/対応者。
+    - 影響を受けたシステムのエンジニアリングマネージャー。
+    - 影響を受けたシステムのプロダクトマネージャー。
+- 任意
+    - [カスタマーリエゾン](https://response.pagerduty.co.jp/training/customer_liaison/)（Sev-1インシデントの場合のみ）。
 
-PagerDuty postmortems have a "Status" field that indicates where in our process the postmortem currently is. Here's a description of the values and how we use them.
+PagerDutyのポストモーテムには、ポストモーテムが現在プロセスのどの段階にあるかを示す「ステータス」フィールドがあります。以下は、値の説明と使用方法です。
 
-| Status | Description |
+| ステータス | 説明 |
 |-|-|
-| **Draft** | Indicates that the content of the postmortem is still being worked on. |
-| **In Review** | The content of the postmortem has been completed, and is ready to be reviewed during the postmortem meeting. |
-| **Reviewed** | The meeting is over and the content has been reviewed and agreed upon.<br/>If there is an "External Message", the Customer Support team will take the message and update our status page as appropriate. |
-| **Closed** | No further actions are needed on the postmortem (outstanding issues are tracked in JIRA).<br/>If no "External Message", you can skip straight to this once the meeting is over.<br/>If there's an "External Message", then the Support team will update it to this status once the message is posted. |
+| **ドラフト** | ポストモーテムの内容がまだ作業中であることを示します。 |
+| **レビュー中** | ポストモーテムの内容が完成し、ポストモーテムミーティングでのレビューの準備ができていることを示します。 |
+| **レビュー済み** | 会議が終了し、内容がレビューされ合意されたことを示します。<br/>「対外メッセージ」がある場合、カスタマーサポートチームがメッセージを取り、適切にステータスページを更新します。 |
+| **クローズ** | ポストモーテムに関するさらなるアクションは必要ない状態です（未解決の問題はJIRAで追跡されます）。<br/>「対外メッセージ」がない場合、会議終了後にこのステータスに直接移行できます。<br/>「対外メッセージ」がある場合、サポートチームがメッセージを投稿した後にこのステータスに更新します。 |
 
-## Create a Timeline
+## タイムラインの作成
 ![Timeline](../assets/img/thumbnails/2CreateATimeline.png)
-Begin by focusing on the timeline. Document the facts of what happened during the incident. Avoid evaluating what should or should not have been done and coming to conclusions about what caused the incident. Presenting only the facts here will help avoid blame and supports a deeper analysis. Note the incident may have started before responders became aware of it and began the response effort. The timeline includes important changes in status/impact and key actions taken by responders. To avoid hindsight bias, start your timeline at a point before the incident and work your way forward instead of backwards from resolution.
+まずタイムラインに焦点を当てます。インシデント中に起きた事実を文書化します。何をすべきだったか、何をすべきでなかったか、インシデントの原因は何かといった評価は避けてください。ここで事実のみを提示することで、非難を避け、より深い分析をしやすくします。またインシデントは、対応者が気づいて対応を開始する前に始まっていた可能性があることに注意してください。タイムラインにはステータス/影響の重要な変化と対応者が取った主要なアクションを含めます。後知恵バイアスを避けるため、タイムラインはインシデント発生前の時点から始め、解決から逆算するのではなく、時系列に沿って進めてください。
 
-Review the incident log in Slack to find key decisions made and actions taken during the response effort. Also include information the team didn't know during the incident that, in hindsight, you wish you would have. Find this additional information by looking at monitoring, logs, and deployments related to the affected services. You'll take a deeper look at monitoring during the analysis step, but start here by adding key events related to the incident, and include changes to incident status and the impact to the timeline.
+Slackのインシデントログを確認して、対応中に行われた重要な決定やアクションを見つけます。後から考えると知っておきたかったけれども、インシデント中には知らなかった情報も含めましょう。このような追加情報は、影響を受けたサービスに関連するモニタリング、ログ、デプロイを確認すると見つけることができます。モニタリングについては分析の段階で精査しますが、まずはインシデントに関連する重要なイベントをタイムラインに追加し、インシデントのステータスと影響の変化も含めてください。
 
-For each item in the timeline, identify a metric or some third-party page where the data came from. This helps illustrate each point clearly and ensures you remain rooted in fact rather than opinions. This could be a link to a monitoring graph, a log search, a tweet, etc.—anything that shows the data point you're trying to illustrate in the timeline.
+タイムラインの各項目について、データの出所となるメトリクスまたはサードパーティのページを特定します。これにより各ポイントが明確に説明され、意見ではなく事実に基づいていることが保証されます。これはモニタリンググラフへのリンク、ログ検索、Xのポスト、その他タイムラインで説明しようとしているデータポイントを示すものであれば何でも構いません。
 
-!!! info "Key Takeaways"
-    * Stick to the facts.
-    * Include changes to incident status and impact.
-    * Include key decisions and actions taken by responders.
-    * Illustrate each point with a metric.
+!!! info "重要なポイント"
+    * 事実に忠実であること。
+    * インシデントのステータスと影響の変化を含めること。
+    * 対応者が行った重要な決定とアクションを含めること。
+    * 各ポイントをメトリクスで説明すること。
 
-## Document Impact
+## 影響の文書化
 ![Impact](../assets/img/thumbnails/3DocumentImpact.png)
-Impact should be described from a few perspectives:
+影響はいくつかの観点から説明する必要があります：
 
-- How long was the impact visible? In other words, what was the length of time users/customers were affected?
-    - Note the length of impact may differ from the length of the response effort. Impact may have started some time before it was detected and incident response began.
-- How many customers were affected?
-    - Support may need a list of all affected customers so they can reach out individually.
-- How many customers wrote or called support about the incident?
-- What functionality was affected and how severely?
-    - Quantify impact with a business metric specific to your product. For PagerDuty this includes event submission, delayed processing, slow notification delivery, etc.
+- 影響が発生していた期間はどれくらいですか？言い換えれば、ユーザー/顧客が影響を受けた時間の長さはどれくらいですか？
+    - 影響の長さは対応作業の長さとは異なる場合があることに注意してください。影響は、問題が検出されてインシデント対応が開始される前にすでに始まっていた可能性があります。
+- 何人の顧客が影響を受けましたか？
+    - サポートは、影響を受けたすべての顧客のリストを必要とする場合があり、個別に連絡を取ることがあります。
+- 何人の顧客がインシデントについてサポートに連絡しましたか？
+- どの機能がどの程度影響を受けましたか？
+    - 製品に特化したビジネスメトリクスで影響を定量化します。PagerDutyの場合、これにはイベント送信、処理の遅延、通知配信の遅延などが含まれます。
 
-## Analyze the Incident
+## インシデントの分析
 ![Analyze](../assets/img/thumbnails/4AnalyzeTheIncident.png)
-Now that you have an understanding of what happened during the incident, look further back in time to find the contributing factors that led to the incident. Technology is a complex system with a network of relationships (organizational, human, technical) that is continuously changing.
+インシデント中に何が起きたかを理解したら、さらに時間をさかのぼってインシデントにつながった要因を探します。テクノロジーは、継続的に変化する関係のネットワーク（組織的、人的、技術的）を伴う複雑なシステムです。
 
-In his paper, "[How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)," Dr. Richard Cook says that because complex systems are heavily defended against failure, it is a unique combination of apparently innocuous failures that join to create catastrophic failure. Furthermore, because overt failure requires multiple faults, attributing a "root cause" is fundamentally wrong. **There is no single root cause of major failure in complex systems, but a combination of contributing factors that together lead to failure.** The postmortem owner's goal in analyzing the incident is not to identify the root cause, but to understand the multiple factors that created an environment where this failure became possible.
+リチャード・クック博士の論文「[How Complex Systems Fail](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)」によれば、複雑なシステムは障害から強く防御されている一方、一見無害な問題が独自に組み合わさった結果、壊滅的な障害を引き起こします。さらに、明白な障害には複数の欠陥が必要なため、「根本原因」を特定することは根本的に間違っています。**複雑なシステムの大きな障害には単一の根本原因はなく、障害が可能になる環境を作り出す複数の要因の組み合わせがあります。**ポストモーテムオーナーのインシデント分析の目標は根本原因を特定することではなく、この障害を引き起こした可能性のある複数の要因を理解することです。
 
-Cook also says the effort to find the "root cause" does not reflect an understanding of the system, but rather the cultural need to blame specific, localized forces for events. Blamelessness is essential for an effective postmortem. **An individual's action should never be considered a root cause.** Effective analysis goes deeper than human action. In the cases where someone's mistake did contribute to a failure, it is worth anonymizing this in your analysis to avoid attaching blame to any individual. Assume any team member could have made the same mistake. According to Cook, "all practitioner actions are actually gambles, that is, acts that take place in the face of uncertain outcomes."
+クックはまた、「根本原因」を見つける努力はシステムの理解を反映するものではなく、むしろ発生した出来事に対して特定の局所的な力を非難する文化的な必要性を反映していると述べています。非難がないことは効果的なポストモーテムにとって不可欠です。**個人の行動が根本原因と見なされるべきでは決してありません。**効果的な分析では、人間の行動よりも深いところまで掘り下げを行います。誰かのミスが障害に寄与した場合、分析においては個人への非難を避けるためにこれを匿名化する意味があります。どのチームメンバーも同じミスを犯す可能性があると仮定しましょう。クックによれば、「あらゆる実務担当者の行動は実のところギャンブルであり、不確実な結果に直面しながら行われる行為です。」
 
-The postmortem owner should start their analysis by looking at the monitoring for the affected services. Search for irregularities like sudden spikes or flatlining when the incident began and leading up to the incident. Include any commands or queries used to look up data, graph images, or links from monitoring tooling alongside this analysis so others can see how the data was gathered. If there is not monitoring for this service or behavior, make building monitoring an action item for this postmortem. More on [writing action items](#followup) below.
+ポストモーテムオーナーは、影響を受けたサービスのモニタリングを調査することから分析を始めるべきです。インシデントが始まった時点とその前に、突然のスパイクやフラットラインがなかったか異常を探します。データがどのように収集されたかを他の人が確認できるように、データを検索するために使用したコマンドやクエリ、グラフ画像、モニタリングツールからのリンクをこの分析と一緒にまとめてください。このサービスや動作に対するモニタリングがない場合は、モニタリングの構築をこのポストモーテムのアクションアイテムとしてしましょう。以下の[アクションアイテムの作成](#followup)で詳しく説明します。
 
-!!! warning "Importance of Monitoring"
-    Puppet's 2018 State of DevOps Report highlights making monitoring configurable by the team operating the service as a foundational practice for successful DevOps. Empowering teams to define, manage, and share their own measurement of performance contributes to a culture of continuous improvement.
+!!! warning "モニタリングの重要性"
+    Puppetの2018年DevOpsレポートは、サービスを運用するチームがモニタリングを設定できるようにすることが、成功するDevOpsの基本的な実践であることを強調しています。チームが自分たちのパフォーマンス測定を定義、管理、共有できるようにすることは、継続的改善の文化に貢献します。
 
-Another helpful strategy for targeting what caused an incident is reproducing it in a non-production environment. Experiment by modifying variables to isolate the phenomenon. If you modify or remove some input does the incident still occur?
+インシデントの原因を特定するもう一つの有効な戦略は、本番以外の環境でインシデントを再現することです。現象の切り分けを行えるように変数を変更して実験を行います。入力の一部を変更または削除した場合も、まだインシデントは発生しますか？
 
-This level of analysis will uncover the superficial causes of the incident. Next, ask why the system was designed in a way to make this possible. Why did those design decisions seem to be the best decisions at the time? Answering these questions will help you uncover root causes.
+このレベルまで分析を行うと、インシデントの表面的な原因が明らかになります。次に、このような事象が発生しうる形でシステムが設計された背景を尋ねます。なぜ、当時それらの設計判断が最良の決定だと思われたのでしょうか？これらの質問に答えていくと、根本原因を明らかにするのにつながります。
 
-Here are some questions to help the postmortem owner identify the class of a particular problem:
+以下は、ポストモーテムオーナーが特定の問題の種類を特定するのに役立つ質問です：
 
-- Is it an isolated incident or part of a trend?
-- Was this a specific bug, a failure in a class of problem we anticipated, or did it uncover a class of issue we did not architecturally anticipate?
-- Was there work the team chose not to do in the past that contributed to this incident?
-- Research if there were any similar or related incidents in the past. Does this incident demonstrate a larger trend in your system?
-- Will this class of issue get worse/more likely as you continue to grow and scale the use of the service?
+- これは単独のインシデントですか、それとも直近よく発生しているものの一部ですか？
+- これは特定のバグや予想された種類の障害だったか、またアーキテクチャ的に予想していなかった問題の種類を明らかにしましたか？
+- 過去にチームがやらないことを選択した作業で、このインシデントに寄与したものはありましたか？
+- 過去に類似または関連するインシデントがあったかどうかを調査します。このインシデントは、システムのより大きな範囲の傾向を示すものですか？
+- サービスの使用を継続的に成長させ拡大するにつれて、この種の問題は悪化/より発生しやすくなりますか？
 
 !!! tip
-    At PagerDuty, we have a separate process for analyzing larger trends across multiple incidents to inform technical and organizational planning. Learn more in our guide on [Operational Reviews](http://reviews.pagerduty.com).
+    PagerDutyでは、技術的および組織的な計画に情報を提供するために、複数のインシデントに渡るより大きな範囲の傾向を分析するための別のプロセスがあります。詳細は[運用レビュー](http://reviews.pagerduty.com)に関するガイドをご覧ください。
 
-Though it may not be a root cause, consider the process in your analysis. Did the way that people collaborate, communicate, and/or review work contribute to the incident? This is also an opportunity to evaluate and improve the incident response process. Consider what worked well and didn't work well within the incident response process during the incident.
+根本原因ではないかもしれませんが、分析においてはプロセスも考慮してください。人々が協力し、コミュニケーションを取り、作業をレビューする方法がインシデントに寄与しましたか？これはまた、インシデント対応プロセスを評価し改善する機会でもあります。インシデント中の対応プロセスで何がうまくいき、何がうまくいかなかったかを考えてみてください。
 
-Write a summary of the findings in the postmortem. The team may find further learnings and identify additional causes through discussion in the meeting, but the owner should do as much pre-work and documentation as possible to ensure a productive discussion.
+ポストモーテムに調査結果の要約を書きます。チームは会議での議論を通じてさらなる学びを見つけ、追加の原因を特定するかもしれませんが、オーナーは生産的な議論を確保するために可能な限り事前作業と文書化を行ういましょう。
 
-### Questions to Ask
-Below is a non-exhaustive list to help stimulate deep analysis. Ask "how" and "what" questions rather than "who" or "why" to discourage blame and encourage learning.
+### 質問項目
+以下は、深い分析を促進するためのリストです。非難を避け、学習を促進するために、「誰が」や「なぜ」ではなく、「どのように」「何が」という質問をしてください。
 
 <table>
     <tr>
-        <td>Cues</td>
+        <td>手がかり</td>
         <td>
             <ul>
-                <li>What were you focusing on?</li>
-                <li>What was not noticed?</li>
-                <li>What differed from what was expected?</li>
+                <li>何に注目していましたか？</li>
+                <li>何が見落とされていましたか？</li>
+                <li>予想と異なっていたのは何でしたか？</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td>Previous Knowledge/Experience</td>
+        <td>過去の知識/経験</td>
         <td>
             <ul>
-                <li>Was this an anticipated class of problem or did it uncover a class of issue that was not architecturally anticipated?</li>
-                <li>What expectations did participants have about how things were going to develop?</li>
-                <li>Were there similar incidents in the past?</li>
+                <li>これは予想された問題の種類でしたか、それともアーキテクチャ上予想されていなかった問題の種類を明らかにしましたか？</li>
+                <li>参加者は事態の進展についてどのような想定を持っていましたか？</li>
+                <li>過去に類似したインシデントはありましたか？</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td>Goals</td>
+        <td>目標</td>
         <td>
             <ul>
-                <li>What goals governed your actions at the time?</li>
-                <li>How did time pressure or other limitations influence choices?</li>
-                <li>Was there work the team chose not to do in the past that could have prevented or mitigated this incident?</li>
+                <li>当時のあなたの行動を支配していた目標は何でしたか？</li>
+                <li>時間的制約やその他の制限が選択にどのような影響を与えましたか？</li>
+                <li>過去にチームが行わないことを選択した作業で、このインシデントを防止または軽減できたものはありましたか？</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td>Assessment</td>
+        <td>評価</td>
         <td>
             <ul>
-                <li>What mistakes (for example, in interpretation) were likely?</li>
-                <li>How did you view the health of the services involved prior to the incident?</li>
-                <li>Did this incident teach you something that should change views about this service's health?</li>
+                <li>どのようなミス（例えば、解釈における）が起こりやすかったですか？</li>
+                <li>インシデント発生前に、関連するサービスの健全性をどのように見ていましたか？</li>
+                <li>このインシデントは、このサービスの健全性に関する見方を変えるべき何かを教えてくれましたか？</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td>Taking Action</td>
+        <td>行動</td>
         <td>
             <ul>
-                <li>How did you judge you could influence the course of events?</li>
-                <li>What options were taken to influence the course of events? How did you determine that these were the best options at the time?</li>
-                <li>How did other influences (operational or organizational) help determine how you interpreted the situation and how you acted?</li>
+                <li>どのように事態の流れに影響を与えられると判断しましたか？</li>
+                <li>事態の流れに影響を与えるためにどのような選択肢が取られましたか？これらが当時の最善の選択肢であると、どのように判断しましたか？</li>
+                <li>他の影響（運用上または組織上）が、状況の解釈や行動の決定にどのように役立ちましたか？</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td>Help</td>
+        <td>支援</td>
         <td>
             <ul>
-                <li>Did you ask anyone for help?</li>
-                <li>What signal brought you to ask for support?</li>
-                <li>Were you able to contact the people you needed to contact?</li>
+                <li>誰かに助けを求めましたか？</li>
+                <li>どのような契機で他の人へサポートを求めましたか？</li>
+                <li>連絡する必要のある人々に連絡することはできましたか？</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td>Process</td>
+        <td>プロセス</td>
         <td>
             <ul>
-                <li>Did the way that people collaborate, communicate, and/or review work contribute to the incident?</li>
-                <li>What worked well in your incident response process and what did not work well?</li>
+                <li>人々が協力し、コミュニケーションを取り、作業をレビューする方法がインシデントに寄与しましたか？</li>
+                <li>インシデント対応プロセスで上手くいったことと上手くいかなかったことは何ですか？</li>
             </ul>
         </td>
     </tr>
 </table>
 
-!!! info "Key Takeaways"
-    * Find contributing factors, not the root cause.
-    * Focus on the system, not the humans.
-    * Look for anomalies in monitoring.
-    * Reproduce and experiment in a non-production environment.
-    * Don't forget to review your processes.
+!!! info "重要なポイント"
+    * 根本原因ではなく、寄与要因を見つけること。
+    * 人間ではなく、システムに焦点を当てること。
+    * モニタリングの異常を探すこと。
+    * 本番以外の環境で再現し実験すること。
+    * プロセスのレビューを忘れないこと。
 
-## Follow-Up Actions<a name="followup"></a>
+## フォローアップアクション<a name="followup"></a>
 ![Followup](../assets/img/thumbnails/5FollowUpActions.png)
-After identifying what caused the incident, ask what needs to be done to prevent this from happening again. Based on your analysis, you may also have proposals to reduce the occurrence of this class of problem, rather than this specific incident from recurring.
+インシデントの原因を特定した後、これが再び起こらないようにするために何をする必要があるかを考えます。分析に基づいて、この特定のインシデントではなく、この種の問題の発生を減らすための提案もあるかもしれません。
 
-It may not be possible (or worth the effort) to completely eliminate the possibility of this same incident or a similar incident from happening again, so also consider how you can improve detection and mitigation of future incidents. Does the team need better monitoring and alerting around this class of problem so they can respond faster in the future? If this class of incident does happen again, how can the team decrease the severity or duration? Remember to identify any actions that can make the incident response process better, too. Go through the incident history in Slack to find any to-do items raised during the incident and make sure these are documented as tickets as well. (At this phase, you are only opening tickets. There is no expectation that tasks will be completed before the postmortem meeting.)
+同じインシデントや類似のインシデントが再び発生する可能性を完全に排除することは不可能（または努力に値しない）かもしれないので、将来のインシデントの検出と軽減をどのように改善できるかも考慮してください。この種の問題に対してはより良いモニタリングとアラートが必要で、将来より迅速にチームが対応できるようにする必要がありますか？この種のインシデントが再び発生した場合、チームはどのように重大度や対応時間を抑えることができますか？インシデント対応プロセスを改善するためのアクションも特定することを忘れないでください。Slackのインシデント履歴を確認して、インシデント中に提起されたすべてのToDoアイテムを見つけ、これらもチケットとして文書化されていることを確認してください。（この段階では、チケットを作成するだけです。ポストモーテムミーティングの前にタスクを完了させる必要はありません。）
 
-Create tickets for all proposed follow-up actions in your task management tool. Label all tickets with their severity level and date tags so they can be easily found and reported in the ticketing system. Provide as much context and proposed direction on the tickets as you can so the team's product owner will have enough information to prioritize the task against other work and the eventual assignee will have enough information to complete the task.
+提案されたすべてのフォローアップアクションのチケットをタスク管理ツールで作成します。すべてのチケットに重大度レベルと日付タグを付けて、チケットシステムで簡単に見つけて報告できるようにします。チームのプロダクトオーナーが他の作業と比較してタスクの優先順位を付けるのに十分な情報があり、最終的な担当者がタスクを完了するのに十分な情報を得られるよう、チケットにできるだけ多くのコンテキストと提案された方向性を提供してください。
 
-In the _;login:_ magazine article, "[Postmortem Action Items: Plan the Work and Work the Plan](https://www.usenix.org/system/files/login/articles/login_spring17_09_lunney.pdf)," John Lunney, Sue Lueder, and Betsy Beyer write about how Google writes postmortem action items to ensure they are completed quickly and easily. They advise all action items to be written as actionable, specific, and bounded.
+_;login:_ マガジンの記事「[Postmortem Action Items: Plan the Work and Work the Plan](https://www.usenix.org/system/files/login/articles/login_spring17_09_lunney.pdf)」で、John Lunney・Sue Lueder・Betsy Beyerは、Googleがポストモーテムのアクションアイテムを迅速かつ簡単に完了させるためにどのように書いているかを説明しています。彼らはすべてのアクションアイテムを実行可能、具体的、かつ範囲が限定されたものとして書くことを勧めています。
 
-- **Actionable:** Phrase each action item as a sentence starting with a verb. The action should result in a useful outcome.
-- **Specific:** Define each action item's scope as narrowly as possible, making clear what is in and out of scope.
-- **Bounded:** Word each action item to indicate how to tell when it is finished, as opposed to open-ended or ongoing tasks.
+- **実行可能：** 各アクションアイテムを動詞で始まる文として表現します。アクションは有用な結果をもたらすようにします。
+- **具体的：** 各アクションアイテムの範囲をできるだけ狭く定義し、範囲内と範囲外を明確にします。
+- **範囲が限定的：** 各アクションアイテムを、オープンエンドまたは継続的なタスクではなく、いつ終了したかを示すように表現します。
 
-| Poorly Worded | Better |
+| 不適切な表現 | より良い表現 |
 |-|-|
-| Investigate monitoring for this scenario. | **Actionable:** Add alerting for all cases where this service returns >1% errors. |
-| Fix the issue that caused the outage. | **Specific:** Handle invalid postal code in user address form input safely. |
-| Make sure engineer checks that database schema can be parsed before updating. | **Bounded:** Add automated presubmit check for schema changes. |
+| このシナリオのモニタリングを調査する。 | **実行可能：** このサービスが>1%のエラーを返すすべてのケースのアラートを追加する。 |
+| 停止を引き起こした問題を修正する。 | **具体的：** ユーザーアドレスフォーム入力の無効な郵便番号を安全に処理する。 |
+| エンジニアが更新前にデータベーススキーマが解析できることを確認するようにする。 | **範囲が限定的：** スキーマ変更の自動事前送信チェックを追加する。 |
 
-<small>Source: _;login:_  Spring 2017 Vol. 42, No. 1.</small>
+<small>出典: _;login:_  Spring 2017 Vol. 42, No. 1.</small>
 
-If there are any proposed follow-up actions that need discussion before tickets can be created, make a note to add these items to the postmortem meeting agenda. These may be proposals that need team validation or clarification. Discussing these items in the meeting will help decide how best to proceed.
+チケットを作成する前に議論が必要なフォローアップアクションの提案がある場合は、これらの項目をポストモーテムミーティングの議題に追加するメモを作成しましょう。場合によってはチームの検証や明確化が必要な提案かもしれません。会議でこれらの項目を議論すると、どのように進めるのが最善かを決定するのに役立つでしょう。
 
-Be careful with creating too many tickets. Only create tickets that are P0/P1s; i.e., tasks that absolutely should be dealt with. There will be some trade-offs here, and that's fine. Sometimes the ROI isn't worth the effort that would go into performing an action that may reduce the recurrence of the incident. When that is the case, it is worth documenting that decision in the postmortem. Understanding why the team is choosing not to perform an action helps avoid learned helplessness.
+あまりにも多くのチケットを作成しないように注意してください。P0/P1のタスク、つまり絶対に対処すべきタスクのみを作成しましょう。ここにはいくらかトレードオフが発生することがありますが、それは問題ありません。ときには、インシデントの再発を減らす可能性のあるアクションを実行するために必要な労力に対して、ROIが見合わないケースもあります。その場合も、その決定をポストモーテムに文書化しておく価値があります。チームがアクションを実行しないことを選択した理由を理解するのは、やったことが役に立たなかったのではないかという無力感を避けるのにも役立つでしょう。
 
-Note the person who creates the ticket is not responsible for completing it. Tickets are opened under the projects for the teams that own the affected service. At least one representative for all teams that will be responsible for a follow-up action are invited to the postmortem meeting.
+チケットを作成する人自身がそれを完了する責任を負うわけではないことに注意しましょう。チケットは影響を受けたサービスを所有するチームのプロジェクトでオープンされます。フォローアップアクションの責任を負うすべてのチームの代表者を少なくとも1人、ポストモーテムミーティングに招待します。
 
 
-!!! info "Key Takeaways"
-    * What needs to be done to reduce the likelihood of this, or a similar, incident from happening again?
-    * How can you detect this type of incident sooner?
-    * How can you decrease the severity or duration of this type of incident?
-    * Write actionable, specific, and bounded tasks.
+!!! info "重要なポイント"
+    * このインシデントや類似のインシデントが再発する可能性を減らすために、何をする必要がありますか？
+    * この種のインシデントをより早く検出するにはどうすればよいですか？
+    * この種のインシデントの重大度や対応期間をどのように抑えることができますか？
+    * 実行可能、具体的、かつ範囲が限定されたタスクを書くこと。
 
-## Write External Messaging
+## 対外メッセージの作成
 ![External](../assets/img/thumbnails/6WriteExternalMessaging.png)
-The goal of external messaging is to build trust by giving customers enough information about what happened and what you're doing about it, without giving away proprietary information about your technology and organization. There are parts of your internal analysis that primarily benefit the internal audience and do not need to be included in your external postmortem.
+対外メッセージの目的は、技術や組織に関する独自情報を明かすことなく、何が起こったのか、それに対して何をしているのかについて顧客に十分な情報を提供することで信頼を築くことです。内部分析の一部は主に内部の読者に利益をもたらすもので、外部のポストモーテムに含める必要はありません。
 
-The external postmortem is a summarized and sanitized version of the information used for the internal postmortem. External postmortems include these three sections:
+外部ポストモーテムは、内部ポストモーテムに使用される情報を要約し、整理したものです。外部ポストモーテムには以下の3つのセクションが含まれます：
 
-1. **Summary:** Two to three sentences that summarize the duration of the incident and the observable customer impact.
-1. **What Happened:** 
-    - Summary of cause(s).
-    - Summary of customer-facing impact during the incident.
-    - Summary of mitigation efforts during the incident.
-1. **What Are We Doing About This:** Summary of action items.
+1. **要約：** インシデントの期間と観測可能な顧客への影響を要約した2〜3文。
+1. **何が起きたか：** 
+    - 原因の要約。
+    - インシデント中の顧客向け影響の要約。
+    - インシデント中の緩和努力の要約。
+1. **これに対して何をしているか：** アクションアイテムの要約。
 
->Tip: Avoid using the word "outage" unless it really was a full outage—use the word "incident" or "service degradation" instead. Customers generally see "outage" and assume the worst.
+>ヒント：本当に完全な停止でない限り、「停止（outage）」という言葉を使用することは避けてください。代わりに「インシデント」または「サービス低下」という言葉を使用してください。顧客は一般的に「停止」を見て最悪の事態を想定します。
 
-Note that at this point, the external postmortem is drafted language that should not be sent or published. It needs to be reviewed during the postmortem meeting before being sent out.
+この時点で、外部ポストモーテムはまだ送信または公開すべきではないドラフトであることに注意してください。送信前にポストモーテムミーティングでレビューする必要があります。
 
-## Postmortem Review
+## ポストモーテムレビュー
 ![Review](../assets/img/thumbnails/7PostmortemReview.png)
-At PagerDuty, we have a community of experienced postmortem writers available to review postmortems for style and content. This avoids wasted time during the meeting. We post a link to the postmortem into Slack to receive feedback at least 24 hours before the meeting is scheduled.
+PagerDutyでは、スタイルと内容に関するポストモーテムのレビューに活用できる経験豊富なポストモーテム作成者のコミュニティがあります。これにより、会議中の無駄な時間を減らせます。会議がスケジュールされる少なくとも24時間前に、Slackへポストモーテムへのリンクを投稿してフィードバックを受け取ります。
 
-Here are some of the things we look for:
+以下は、私たちが主に確認する事柄です：
 
-- Does it provide enough detail?
-- Rather than just pointing out what went wrong, does it drill down to the underlying causes of the issue?
-- Does it separate "What happened?" from "How to fix it"?
-- Do the proposed action items make sense? Are they well-scoped enough?
-- Is the postmortem well-written and understandable?
-- Does the external message resonate well with customers or is it likely to cause outrage?
+- 十分な詳細を提供していますか？
+- 何が間違っていたかを指摘するだけでなく、問題の根本的な原因を掘り下げていますか？
+- 「何が起きたか？」と「どう修正するか」を分けていますか？
+- 提案されたアクションアイテムは意味がありますか？十分に範囲が限定されていますか？
+- ポストモーテムは適切に書かれ、理解可能ですか？
+- 対外メッセージは顧客の共感を得られそうな内容ですか、それとも反感を引き起こす可能性がありますか？
 
-Reviewing a postmortem isn't about nitpicking typos (but do make sure the external message isn't littered with spelling and grammatical errors). It's about providing constructive feedback on valuable changes to a postmortem to get the most benefit from them.
+ポストモーテムのレビューは誤字脱字を細かく指摘することではありません（ただし、対外メッセージにスペルや文法エラーがないことを確認してください）。重要なのは、ポストモーテムから最大の利益を得るために、ポストモーテムに価値ある変更を加えるための建設的なフィードバックを提供することです。
