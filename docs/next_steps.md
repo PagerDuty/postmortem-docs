@@ -55,7 +55,7 @@ Slackやその他のデータソースと統合している場合、その情報
 ![Edit Postmortem Section Text Areas](assets/img/thumbnails/NextSteps/9EditPostmortemSections.png)
 
 変更は今後のポストモーテムレポートにのみ適用されます。既に作成されたレポートには適用されません。
-質問や説明情報をどのように設定するかのガイダンスについては、このガイドの[分析の質問](https://postmortems.pagerduty.com/resources/analysis/)セクションを参照してください。
+質問や説明情報をどのように設定するかのガイダンスについては、このガイドの[分析の質問](https://postmortems.pagerduty.co.jp/resources/analysis/)セクションを参照してください。
 
 いつでもデフォルトのテンプレートから再開したい場合は、テンプレートをリセットできます。元のデフォルトセクションに戻すには、レポートテンプレートの上部にある「Reset Template」ボタンをクリックします。ポップアップメニューでテンプレートをリセットするか、キャンセルするかの選択が促されます。
 
