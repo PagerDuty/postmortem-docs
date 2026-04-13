@@ -11,7 +11,7 @@ Writing detailed and accurate postmortems allows you to learn quickly from mista
 - Define any technical lingo/acronyms you use that newcomers may not understand.
 - [Separate what happened from how to fix it](https://www.youtube.com/watch?v=TqaFT-0cY7U).
 - Write follow-up tasks that are actionable, specific, and bounded in scope.
-- [Discuss how the incident fits into our understanding of the health and resiliency of the services affected](https://www.pagerduty.com/blog/postmortem-understand-service-reliability/).
+- Discuss how the incident fits into our understanding of the health and resiliency of the services affected.
 
 ## Do Not
 - Use the word "outage" unless it really was an outage. Accurately reflect the impact of an incident. Outage is usually too broad a term to use. It can lead customers to think the product was fully unavailable when that likely was nowhere near the case.
