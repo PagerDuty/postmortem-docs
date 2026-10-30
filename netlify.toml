@@ -1,11 +1,122 @@
+
+# netlify.toml — postmortems.pagerduty.com
+# This site now only redirects to docs.pagerduty.com/ops-guides/postmortem-best-practices.
+
+# ---------------------------------------------------------------------------
+# Headers
+# ---------------------------------------------------------------------------
+# These are attached to the 301 responses too. Referrer-Policy matters here:
+# a redirect response's Referrer-Policy is applied to the follow-up request,
+# so "same-origin" would strip the referrer when the browser goes on to
+# docs.pagerduty.com (cross-origin), and docs analytics would lose the
+# original traffic source (Google, blogs, Slack, etc.).
 [[headers]]
   for = "/*"
   [headers.values]
-    Strict-Transport-Security = "max-age=31536000 ; includeSubDomains"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "same-origin"
-    Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
-    Content-Security-Policy-Report-Only = "default-src 'none'; script-src 'self' ssl.google-analytics.com www.google-analytics.com 'sha256-AzwHtScSzFOoXIoLRz4+vK2rDADGdNC3AXQG5FjKK68=' 'sha256-8IZh+gkrYCTCvcu/zawPN9Vj4RLghgOT4F5rTZXvdkQ='; object-src 'self'; style-src 'self'; img-src 'self' data: ssl.google-analytics.com www.google-analytics.com; media-src 'none'; frame-src www.youtube.com www.youtube-nocookie.com; font-src 'self'; connect-src 'self' ssl.google-analytics.com www.google-analytics.com; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
 
+# ---------------------------------------------------------------------------
+# Redirects — first match wins. Keep the catch-all LAST.
+# force = true is required because the old MkDocs build output (if still
+# deployed) would otherwise shadow these rules.
+# ---------------------------------------------------------------------------
+[[redirects]]
+  from = "/"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what_is/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/what-is-a-postmortem"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/culture/blameless/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/blameless-postmortem"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/culture/introduce/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/introduce-postmortems"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/culture/sharing/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/information-sharing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/culture/accountability/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/accountability"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how_to_write/writing/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/step-by-step"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how_to_write/effective_postmortems/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/effective-postmortems"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/meeting/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/postmortem-meeting"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/next_steps/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/next-steps"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/post_mortem_template/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/template"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/checklist/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/checklist"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/analysis/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/analysis-questions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/examples/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/examples"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/resources/reading/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices/further-reading"
+  status = 301
+  force = true
+
+# Catch-all: assets, sitemap.xml, search index, /culture/, /how_to_write/,
+# /resources/, unknown/mistyped URLs
+[[redirects]]
+  from = "/*"
+  to = "https://docs.pagerduty.com/ops-guides/postmortem-best-practices"
+  status = 301
+  force = true
